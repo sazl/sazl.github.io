@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>The Sad State of Python Profiling</title>
-      <link>https://example.org/posts/the-sad-state-of-python-profiling/</link>
+      <title>The State of Python Profiling</title>
+      <link>https://example.org/posts/the-state-of-python-profiling/</link>
       <pubDate>Fri, 12 Oct 2018 17:59:57 -0400</pubDate>
       
-      <guid>https://example.org/posts/the-sad-state-of-python-profiling/</guid>
+      <guid>https://example.org/posts/the-state-of-python-profiling/</guid>
       <description>There are no good python profiling tools. Here is what I consider necessary from a profiler:
  Cross platform Profiling of live applications Ability to generate profiler dumps (preferably gprof compatible) Call tree profiling Line-level profiling  The built-in python profilers cProfile and profile don&amp;rsquo;t meet 1, 2, and 5. 3rd party alternatives also fall short.
 Pyflame A great live profiler:

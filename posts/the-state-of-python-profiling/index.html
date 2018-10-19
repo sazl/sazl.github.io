@@ -9,7 +9,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet">
 
-        <title>Categories</title>
+        <title>The State of Python Profiling</title>
 
         <link rel="stylesheet" href="/css/stylesheet.css">
     </head>
@@ -43,11 +43,66 @@
         </section>
 
 
-<section>
-  <ul class="posts_listing">
+<div class="blog-post">
+  <h1>The State of Python Profiling</h1>
+  <div class="blog-post-subheader">
+    <time>12 Oct 2018</time>
+  </div>
+  <div class="blog-post-content">
     
-  </ul>
-</section>
+
+<p>There are no good python profiling tools.
+Here is what I consider necessary from a profiler:</p>
+
+<ol>
+<li>Cross platform</li>
+<li>Profiling of live applications</li>
+<li>Ability to generate profiler dumps (preferably gprof compatible)</li>
+<li>Call tree profiling</li>
+<li>Line-level profiling</li>
+</ol>
+
+<p>The built-in python profilers cProfile and profile don&rsquo;t meet 1, 2, and 5.
+3rd party alternatives also fall short.</p>
+
+<h2 id="pyflame">Pyflame</h2>
+
+<p>A great live profiler:</p>
+
+<ul>
+<li>low overhead</li>
+<li>live profiling of processes</li>
+<li>generates profiler dumps, convertible to gprof and svg</li>
+<li>Can generate Chrome</li>
+</ul>
+
+<p>but it has some limitations</p>
+
+<ul>
+<li>Uses linux&rsquo;s strace so it&rsquo;s not cross platform.</li>
+<li>strace is not enabled by default on docker containers.</li>
+<li>strace is disabled for regular users on a lot of distros.</li>
+</ul>
+
+<h2 id="vprof">Vprof</h2>
+
+<ul>
+<li>Linux only</li>
+</ul>
+
+<h2 id="line-profiler">line_profiler</h2>
+
+<ul>
+<li>Uses cProfile so it shares its limitations
+-</li>
+</ul>
+
+<h1 id="references">References</h1>
+
+<p><a href="https://kupczynski.info/2015/01/16/profiling-python-scripts.html">https://kupczynski.info/2015/01/16/profiling-python-scripts.html</a></p>
+
+  </div>
+</div>
 
       <footer>
         <hr>

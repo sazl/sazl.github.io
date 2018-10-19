@@ -12,15 +12,24 @@
     
     
     <item>
-      <title>The Sad State of Python Profiling</title>
-      <link>https://example.org/posts/the-sad-state-of-python-profiling/</link>
+      <title>The State of Python Profiling</title>
+      <link>https://example.org/posts/the-state-of-python-profiling/</link>
       <pubDate>Fri, 12 Oct 2018 17:59:57 -0400</pubDate>
       
-      <guid>https://example.org/posts/the-sad-state-of-python-profiling/</guid>
+      <guid>https://example.org/posts/the-state-of-python-profiling/</guid>
       <description>There are no good python profiling tools. Here is what I consider necessary from a profiler:
  Cross platform Profiling of live applications Ability to generate profiler dumps (preferably gprof compatible) Call tree profiling Line-level profiling  The built-in python profilers cProfile and profile don&amp;rsquo;t meet 1, 2, and 5. 3rd party alternatives also fall short.
 Pyflame A great live profiler:
  low overhead live profiling of processes generates profiler dumps, convertible to gprof and svg Can generate Chrome  but it has some limitations</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://example.org/about/</link>
+      <pubDate>Fri, 12 Oct 2018 17:55:50 -0400</pubDate>
+      
+      <guid>https://example.org/about/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -92,6 +101,15 @@ I first learned of J around 10 years ago. I remember reading &amp;ldquo;Easy J&a
       <guid>https://example.org/posts/problems-in-the-kubaeadm-guide/</guid>
       <description>The deployment of Kubernetes has become a little easier using the kubeadm tool. The tools are still in alpha and the guide is still not as thorough as I would have hoped.
 Installing Flannel as a Pod Network Once you&amp;rsquo;ve completed the first two steps, you should have a working master node. To add additional child nodes you must install a pod network. I chose to install Flannel but there are other options available.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/resume/</guid>
+      <description>Sami Zeinelabdin &amp;mdash; Résumé  html { font-size: 11px; } body { font-family: Georgia, &#39;Times New Roman&#39;, Times, serif; } .aside { text-align: center; float: right; line-height: 1.8em; } .date { font-size: 1.1rem; } .aside-heading { border-bottom: 1px solid #ccc; border-left: 1px solid #ccc; border-top: 1px solid #eee; background-color: #eef; margin-top: -0.5em; } .section-header { background-color: #f7f7f7; border-bottom: 1px solid #ccc; text-align: left; } .header-center { margin: 0 auto; } .</description>
     </item>
     
   </channel>
