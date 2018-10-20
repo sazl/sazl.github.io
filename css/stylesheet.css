@@ -13,9 +13,8 @@ body {
   padding-left: 45px;
   padding-right: 45px;
   padding-bottom: 45px;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border: 1px solid #ccc;
+  margin-top: 5%;
 }
 
 .content {

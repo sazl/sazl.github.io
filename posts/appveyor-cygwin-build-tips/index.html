@@ -74,7 +74,7 @@
 
 <h2 id="environment-variables">Environment Variables</h2>
 
-<p>Set Windows environment variables so they&rsquo;re accessible from within Cygwin.</p>
+<p>Set Windows environment variables so that they&rsquo;re accessible from within Cygwin.</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">init<span class="p">:</span><span class="w">
 </span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;FOR /F &#34;tokens=* USEBACKQ&#34; %%F IN (`%CYG_PATH% %APPVEYOR_BUILD_FOLDER%`) DO SET BUILD_FOLDER=%%F&#39;</span></code></pre></div>
 <p>This is equivalent to:</p>
