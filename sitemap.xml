@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://example.org/posts/appveyor-cygwin-build-tips/</loc>
+    <lastmod>2018-10-20T07:41:22-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://example.org/posts/the-state-of-python-profiling/</loc>
     <lastmod>2018-10-12T17:59:57-04:00</lastmod>
   </url>
@@ -48,28 +53,24 @@
   </url>
   
   <url>
-    <loc>https://example.org/resume/</loc>
-  </url>
-  
-  <url>
     <loc>https://example.org/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://example.org/</loc>
-    <lastmod>2018-10-12T17:59:57-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://example.org/posts/</loc>
-    <lastmod>2018-10-12T17:59:57-04:00</lastmod>
+    <lastmod>2018-10-20T07:41:22-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://example.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/</loc>
+    <lastmod>2018-10-20T07:41:22-04:00</lastmod>
     <priority>0</priority>
   </url>
   

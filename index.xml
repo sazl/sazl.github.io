@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Palimpsest: Unfinished</title>
+    <title>sazl palimpsest</title>
     <link>https://example.org/</link>
-    <description>Recent content on Palimpsest: Unfinished</description>
+    <description>Recent content on sazl palimpsest</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Oct 2018 17:59:57 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 20 Oct 2018 07:41:22 -0400</lastBuildDate>
     
 	<atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Appveyor Cygwin Build Tips</title>
+      <link>https://example.org/posts/appveyor-cygwin-build-tips/</link>
+      <pubDate>Sat, 20 Oct 2018 07:41:22 -0400</pubDate>
+      
+      <guid>https://example.org/posts/appveyor-cygwin-build-tips/</guid>
+      <description>Some tips for working with Appveyor and Cygwin:
+Git Client init:-gitconfig--globalcore.symlinkstrue-gitconfig--globalcore.autocrlfinput More Info: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code
+Environment Variables Set Windows environment variables so they&amp;rsquo;re accessible from within Cygwin.
+init:-&amp;#39;FOR /F &amp;#34;tokens=* USEBACKQ&amp;#34; %%F IN (`%CYG_PATH% %APPVEYOR_BUILD_FOLDER%`) DO SET BUILD_FOLDER=%%F&amp;#39; This is equivalent to:
+export BUILD_FOLDER=$APPVEYOR_BUILD_FOLDER Building on Cygwin x86 and x86_64 environment:matrix:-CYG_ARCH:x86CYG_ROOT:C:/cygwinCYG_CACHE:C:/cygwin/var/cache/setupCYG_SH:C:/cygwin/bin/bash-lcCYG_INSTALL:C:/cygwin/setup-x86.exe-q-PCYG_PATH:C:/cygwin/bin/cygpath-u-CYG_ARCH:x86_64CYG_ROOT:C:/cygwin64CYG_CACHE:C:/cygwin64/var/cache/setupCYG_SH:C:/cygwin64/bin/bash-lcCYG_INSTALL:C:/cygwin64/setup-x86_64.exe-q-PCYG_PATH:C:/cygwin64/bin/cygpath-u Cache Cache Cygwin installs between build runs:
+cache:-&amp;#39;%CYG_CACHE%&amp;#39; Installing Cygwin Packages Use apt-cyg to install Cygwin packages.
+init:-&amp;#39;%CYG_SH% &amp;#34;cygcheck -dc cygwin&amp;#34;&amp;#39;-&amp;#39;%CYG_INSTALL% &amp;#34;wget&amp;#34;&amp;#39;-&amp;#39;%CYG_SH% &amp;#34;wget rawgit.</description>
+    </item>
     
     <item>
       <title>The State of Python Profiling</title>
@@ -39,7 +54,7 @@ Pyflame A great live profiler:
       
       <guid>https://example.org/posts/computer-mythology/</guid>
       <description>I love computer history, reading about old legends and great hackers surmounting the odds.
-Linux: Where Don&#39;t We Want To Go Today? -- Submitted by Pancrazio De Mauro, paraphrasing some well-known sales talk  I also like that the communities are so different in their approaches to defining computing</description>
+Linux: Where Don&amp;#39;t We Want To Go Today? -- Submitted by Pancrazio De Mauro, paraphrasing some well-known sales talk I also like that the communities are so different in their approaches to defining computing</description>
     </item>
     
     <item>
@@ -60,7 +75,7 @@ I&amp;rsquo;d like diagnostic and instrumentation tools that capture data like a
       <guid>https://example.org/posts/tachyons-is-nice-for-templates/</guid>
       <description>Tachyons is Nice Tachyons.io is great for templates and prototypes. I wouldn&amp;rsquo;t write a full landing page in it or anything that&amp;rsquo;s not dynamically generated. Why? because it&amp;rsquo;s got the same problems as css class composition in HTML, there&amp;rsquo;s no way to group css classes you import.
 An example:
-&amp;lt;div class=&amp;quot;aside fl w-80 ma1 pa2 lh-copy&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;aside-heading lh-title&amp;quot;&amp;gt;Technologies&amp;lt;/div&amp;gt; &amp;lt;ul class=&amp;quot;list pl0 pt3&amp;quot;&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/div&amp;gt;  It gets hard to stack css classes into the html tag.</description>
+&amp;lt;div class=&amp;#34;aside fl w-80 ma1 pa2 lh-copy&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;aside-heading lh-title&amp;#34;&amp;gt;Technologies&amp;lt;/div&amp;gt; &amp;lt;ul class=&amp;#34;list pl0 pt3&amp;#34;&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/div&amp;gt; It gets hard to stack css classes into the html tag.</description>
     </item>
     
     <item>
@@ -101,15 +116,6 @@ I first learned of J around 10 years ago. I remember reading &amp;ldquo;Easy J&a
       <guid>https://example.org/posts/problems-in-the-kubaeadm-guide/</guid>
       <description>The deployment of Kubernetes has become a little easier using the kubeadm tool. The tools are still in alpha and the guide is still not as thorough as I would have hoped.
 Installing Flannel as a Pod Network Once you&amp;rsquo;ve completed the first two steps, you should have a working master node. To add additional child nodes you must install a pod network. I chose to install Flannel but there are other options available.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://example.org/resume/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.org/resume/</guid>
-      <description>Sami Zeinelabdin &amp;mdash; Résumé  html { font-size: 11px; } body { font-family: Georgia, &#39;Times New Roman&#39;, Times, serif; } .aside { text-align: center; float: right; line-height: 1.8em; } .date { font-size: 1.1rem; } .aside-heading { border-bottom: 1px solid #ccc; border-left: 1px solid #ccc; border-top: 1px solid #eee; background-color: #eef; margin-top: -0.5em; } .section-header { background-color: #f7f7f7; border-bottom: 1px solid #ccc; text-align: left; } .header-center { margin: 0 auto; } .</description>
     </item>
     
   </channel>

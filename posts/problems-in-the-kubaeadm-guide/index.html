@@ -3,15 +3,28 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111999020-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-111999020-1');
+        </script>
 
-        
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
+        <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48 128x128 256x256" type="image/x-icon">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+            integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+            crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet">
 
-        <title>Installing Kubernetes Using kubeadm</title>
+        
+          <title>sazl palimpsest: Installing Kubernetes Using kubeadm</title>
+        
 
         <link rel="stylesheet" href="/css/stylesheet.css">
+        <link rel="stylesheet" href="/css/syntax.css">
     </head>
     <body>
       <div class="container-fluid content">
@@ -30,13 +43,13 @@
               <a class="nav-item nav-link" href="https://github.com/sazl" target="_blank">GitHub</a>
               
               <a class="nav-item nav-link " href="/about/">About</a>
-              <a class="nav-item nav-link " href="/resume/">Resume</a>
+              
             </div>
           </div>
         </nav>
 
         <section id="page-title">
-          <h1><a href="/">Palimpsest: Unfinished</a></h1>
+          <h1><a href="/">sazl palimpsest</a></h1>
           <div id="author-name">
             <h6><a href="/about/">Sami Zeinelabdin</a></h6>
           </div>
@@ -62,31 +75,22 @@ I chose to install Flannel but there are other options available.
 Make sure that CNI is installed and the directories <code>/opt/cni</code> and <code>/etc/cni/</code> exist.</p>
 
 <p>To install Flannel, run the following command:</p>
-
-<pre><code class="language-bash">  kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">  kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml</code></pre></div>
 <p>After the image has been deployed, the kubedns &ldquo;ContainerCreating&rdquo; status should be resolved.
 You should have the following listing:</p>
-
-<pre><code>  default       kube-flannel-ds-dhqh7                   2/2       Running   0          19h
-  kube-system   dummy-2088944543-r1sgp                  1/1       Running   0          19h
-  kube-system   etcd-fooxert-prd                        1/1       Running   0          19h
-  kube-system   kube-apiserver-fooxert-prd              1/1       Running   0          19h
-  kube-system   kube-controller-manager-fooxert-prd     1/1       Running   0          19h
-  kube-system   kube-discovery-1769846148-5xt3v         1/1       Running   0          19h
-  kube-system   kube-dns-2924299975-31vzt               4/4       Running   0          19h
-  kube-system   kube-proxy-ndgfh                        1/1       Running   0          19h
-  kube-system   kube-scheduler-fooxert-prd              1/1       Running   0          19h
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">  default       kube-flannel-ds-dhqh7                   <span class="m">2</span>/2       Running   <span class="m">0</span>          19h
+  kube-system   dummy-2088944543-r1sgp                  <span class="m">1</span>/1       Running   <span class="m">0</span>          19h
+  kube-system   etcd-fooxert-prd                        <span class="m">1</span>/1       Running   <span class="m">0</span>          19h
+  kube-system   kube-apiserver-fooxert-prd              <span class="m">1</span>/1       Running   <span class="m">0</span>          19h
+  kube-system   kube-controller-manager-fooxert-prd     <span class="m">1</span>/1       Running   <span class="m">0</span>          19h
+  kube-system   kube-discovery-1769846148-5xt3v         <span class="m">1</span>/1       Running   <span class="m">0</span>          19h
+  kube-system   kube-dns-2924299975-31vzt               <span class="m">4</span>/4       Running   <span class="m">0</span>          19h
+  kube-system   kube-proxy-ndgfh                        <span class="m">1</span>/1       Running   <span class="m">0</span>          19h
+  kube-system   kube-scheduler-fooxert-prd              <span class="m">1</span>/1       Running   <span class="m">0</span>          19h</code></pre></div>
 <h1 id="adding-child-nodes">Adding Child Nodes</h1>
 
 <p>To add child nodes to your cluster, run the join command that was output by the <code>kubeadm init</code> command.</p>
-
-<pre><code class="language-bash">  kubeadm join --token &lt;token&gt; &lt;master-ip&gt;
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">  kubeadm join --token &lt;token&gt; &lt;master-ip&gt;</code></pre></div>
 <p>If you get any preflight check failures, check that the Kubernetes tools and docker were installed correctly.
 In my case, I was using Ubuntu 15.10 and docker-engine was not installed correctly, even though I followed the installation instructions.</p>
 

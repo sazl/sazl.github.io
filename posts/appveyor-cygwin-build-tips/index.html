@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111999020-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-111999020-1');
+        </script>
+
+        <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48 128x128 256x256" type="image/x-icon">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+            integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+            crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet">
+
+        
+          <title>sazl palimpsest: Appveyor Cygwin Build Tips</title>
+        
+
+        <link rel="stylesheet" href="/css/stylesheet.css">
+        <link rel="stylesheet" href="/css/syntax.css">
+    </head>
+    <body>
+      <div class="container-fluid content">
+        <nav class="navbar navbar-expand-md navbar-light">
+
+          
+          <span class="navbar-brand mb-0 h1"></span>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link " href="/">Home</a>
+              <a class="nav-item nav-link" href="https://github.com/sazl" target="_blank">GitHub</a>
+              
+              <a class="nav-item nav-link " href="/about/">About</a>
+              
+            </div>
+          </div>
+        </nav>
+
+        <section id="page-title">
+          <h1><a href="/">sazl palimpsest</a></h1>
+          <div id="author-name">
+            <h6><a href="/about/">Sami Zeinelabdin</a></h6>
+          </div>
+        </section>
+
+
+<div class="blog-post">
+  <h1>Appveyor Cygwin Build Tips</h1>
+  <div class="blog-post-subheader">
+    <time>20 Oct 2018</time>
+  </div>
+  <div class="blog-post-content">
+    
+
+<p>Some tips for working with Appveyor and Cygwin:</p>
+
+<h2 id="git-client">Git Client</h2>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">init<span class="p">:</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.symlinks<span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.autocrlf<span class="w"> </span>input</code></pre></div>
+<p>More Info: <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code">https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code</a></p>
+
+<h2 id="environment-variables">Environment Variables</h2>
+
+<p>Set Windows environment variables so they&rsquo;re accessible from within Cygwin.</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">init<span class="p">:</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;FOR /F &#34;tokens=* USEBACKQ&#34; %%F IN (`%CYG_PATH% %APPVEYOR_BUILD_FOLDER%`) DO SET BUILD_FOLDER=%%F&#39;</span></code></pre></div>
+<p>This is equivalent to:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">export</span> <span class="nv">BUILD_FOLDER</span><span class="o">=</span><span class="nv">$APPVEYOR_BUILD_FOLDER</span></code></pre></div>
+<h2 id="building-on-cygwin-x86-and-x86-64">Building on Cygwin x86 and x86_64</h2>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">environment<span class="p">:</span><span class="w">
+</span><span class="w">    </span>matrix<span class="p">:</span><span class="w">
+</span><span class="w">        </span>-<span class="w"> </span>CYG_ARCH<span class="p">:</span><span class="w"> </span>x86<span class="w">
+</span><span class="w">          </span>CYG_ROOT<span class="p">:</span><span class="w"> </span>C<span class="p">:</span>/cygwin<span class="w">
+</span><span class="w">          </span>CYG_CACHE<span class="p">:</span><span class="w"> </span>C<span class="p">:</span>/cygwin/var/cache/setup<span class="w">
+</span><span class="w">          </span>CYG_SH<span class="p">:</span><span class="w"> </span>C<span class="p">:</span>/cygwin/bin/bash<span class="w"> </span>-lc<span class="w">
+</span><span class="w">          </span>CYG_INSTALL<span class="p">:</span><span class="w"> </span>C<span class="p">:</span>/cygwin/setup-x86.exe<span class="w"> </span>-q<span class="w"> </span>-P<span class="w">
+</span><span class="w">          </span>CYG_PATH<span class="p">:</span><span class="w"> </span>C<span class="p">:</span>/cygwin/bin/cygpath<span class="w"> </span>-u<span class="w">
+</span><span class="w">        </span>-<span class="w"> </span>CYG_ARCH<span class="p">:</span><span class="w"> </span>x86_64<span class="w">
+</span><span class="w">          </span>CYG_ROOT<span class="p">:</span><span class="w"> </span>C<span class="p">:</span>/cygwin64<span class="w">
+</span><span class="w">          </span>CYG_CACHE<span class="p">:</span><span class="w"> </span>C<span class="p">:</span>/cygwin64/var/cache/setup<span class="w">
+</span><span class="w">          </span>CYG_SH<span class="p">:</span><span class="w"> </span>C<span class="p">:</span>/cygwin64/bin/bash<span class="w"> </span>-lc<span class="w">
+</span><span class="w">          </span>CYG_INSTALL<span class="p">:</span><span class="w"> </span>C<span class="p">:</span>/cygwin64/setup-x86_64.exe<span class="w"> </span>-q<span class="w"> </span>-P<span class="w">
+</span><span class="w">          </span>CYG_PATH<span class="p">:</span><span class="w"> </span>C<span class="p">:</span>/cygwin64/bin/cygpath<span class="w"> </span>-u</code></pre></div>
+<h2 id="cache">Cache</h2>
+
+<p>Cache Cygwin installs between build runs:</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">cache<span class="p">:</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;%CYG_CACHE%&#39;</span></code></pre></div>
+<h2 id="installing-cygwin-packages">Installing Cygwin Packages</h2>
+
+<p>Use apt-cyg to install Cygwin packages.</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">init<span class="p">:</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;%CYG_SH% &#34;cygcheck -dc cygwin&#34;&#39;</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;%CYG_INSTALL% &#34;wget&#34;&#39;</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;%CYG_SH% &#34;wget rawgit.com/transcode-open/apt-cyg/master/apt-cyg&#34;&#39;</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;%CYG_SH% &#34;install apt-cyg /bin&#34;&#39;</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;%CYG_SH% &#34;apt-cyg install make autoconf automake gcc-core&#34;&#39;</span></code></pre></div>
+  </div>
+</div>
+
+      <footer>
+        <hr>
+        <small>
+          
+          
+        </small>
+      </footer>
+    </div> 
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
+

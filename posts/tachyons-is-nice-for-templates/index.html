@@ -3,15 +3,28 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111999020-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-111999020-1');
+        </script>
 
-        
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
+        <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48 128x128 256x256" type="image/x-icon">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+            integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+            crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet">
 
-        <title>Tachyons Is Nice for Templates</title>
+        
+          <title>sazl palimpsest: Tachyons Is Nice for Templates</title>
+        
 
         <link rel="stylesheet" href="/css/stylesheet.css">
+        <link rel="stylesheet" href="/css/syntax.css">
     </head>
     <body>
       <div class="container-fluid content">
@@ -30,13 +43,13 @@
               <a class="nav-item nav-link" href="https://github.com/sazl" target="_blank">GitHub</a>
               
               <a class="nav-item nav-link " href="/about/">About</a>
-              <a class="nav-item nav-link " href="/resume/">Resume</a>
+              
             </div>
           </div>
         </nav>
 
         <section id="page-title">
-          <h1><a href="/">Palimpsest: Unfinished</a></h1>
+          <h1><a href="/">sazl palimpsest</a></h1>
           <div id="author-name">
             <h6><a href="/about/">Sami Zeinelabdin</a></h6>
           </div>
@@ -58,46 +71,35 @@ I wouldn&rsquo;t write a full landing page in it or anything that&rsquo;s not dy
 Why? because it&rsquo;s got the same problems as css class composition in HTML, there&rsquo;s no way to group css classes you import.</p>
 
 <p>An example:</p>
-
-<pre><code class="language-HTML">&lt;div class=&quot;aside fl w-80 ma1 pa2 lh-copy&quot;&gt;
-    &lt;div class=&quot;aside-heading lh-title&quot;&gt;Technologies&lt;/div&gt;
-    &lt;ul class=&quot;list pl0 pt3&quot;&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;aside fl w-80 ma1 pa2 lh-copy&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;aside-heading lh-title&#34;</span><span class="p">&gt;</span>Technologies<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list pl0 pt3&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <p>It gets hard to stack css classes into the html tag. It&rsquo;s hard to read and it&rsquo;s
 hard to maintain when duplicating elements and tweaking the layout.</p>
 
 <p>I wish I could do something like this in (S)CSS:</p>
+<div class="highlight"><pre class="chroma"><code class="language-SCSS" data-lang="SCSS"><span class="k">@import</span> <span class="s2">&#34;tachyons.scss&#34;</span>
 
-<pre><code class="language-SCSS">@import &quot;tachyons.scss&quot;
+<span class="cm">/* AND </span><span class="c">*/</span>
+<span class="o">.</span><span class="n">aside</span> <span class="o">=</span> <span class="p">[</span> <span class="o">.</span><span class="n">fl</span> <span class="o">.</span><span class="n">w-80</span> <span class="o">.</span><span class="n">ma1</span> <span class="o">.</span><span class="n">pa2</span> <span class="o">.</span><span class="n">lh-copy</span> <span class="p">]</span> <span class="n">extend</span> <span class="p">{</span>
+    <span class="nt">border</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="nn">#eef</span><span class="o">;</span>
+    <span class="nt">line-height</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.2rem</span><span class="o">;</span>
+    <span class="nt">font-weight</span><span class="nd">:</span> <span class="nt">600</span><span class="o">;</span>
+<span class="p">}</span>
 
-/* AND */
-.aside = [ .fl .w-80 .ma1 .pa2 .lh-copy ] extend {
-    border: 1px solid #eef;
-    line-height: 1.2rem;
-    font-weight: 600;
-}
+<span class="nc">.any-title</span> <span class="o">=</span>
 
-.any-title =
-
-.aside__content = [.list, .pl0, .pt3], {
-    margin: 1rem;
-}
-
-</code></pre>
-
+<span class="nc">.aside__content</span> <span class="o">=</span> <span class="o">[</span><span class="nc">.list</span><span class="o">,</span> <span class="nc">.pl0</span><span class="o">,</span> <span class="nc">.pt3</span><span class="o">],</span> <span class="p">{</span>
+    <span class="nt">margin</span><span class="nd">:</span> <span class="nt">1rem</span><span class="o">;</span>
+<span class="p">}</span></code></pre></div>
 <p>Equivalent HTML:</p>
-
-<pre><code class="language-HTML">&lt;div class=&quot;aside&quot;&gt;
-    &lt;div class=&quot;aside__heading&quot;&gt;Technologies&lt;/div&gt;
-    &lt;ul class=&quot;aside__content&quot;&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;
-
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;aside&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;aside__heading&#34;</span><span class="p">&gt;</span>Technologies<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;aside__content&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <p>Some things in the example:</p>
 
 <ul>
@@ -107,10 +109,7 @@ hard to maintain when duplicating elements and tweaking the layout.</p>
 </ul>
 
 <p>Using it in HTML:</p>
-
-<pre><code class="language-HTML">
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"></code></pre></div>
   </div>
 </div>
 
