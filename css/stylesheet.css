@@ -15,6 +15,7 @@ body {
   padding-bottom: 45px;
   border: 1px solid #ccc;
   margin-top: 2%;
+  box-shadow: 0px 0px 15px 1px #e5e5e5;
 }
 
 .content {
@@ -71,21 +72,26 @@ body {
 }
 
 .blog-post-content h2 {
-  margin-top: 1.5em;
+  margin-top: 1.5rem;
   margin-bottom: 1em;
   border-bottom: 1px solid #777;
 }
 
+.posts_listing {
+  padding-left: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 .posts_listing li {
   list-style-type: none;
-  border-top: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  padding: 0.5em;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem;
+  padding-left: 2rem;
 }
 
 .posts_listing li:last-child {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 0;
 }
 
 h1 {
@@ -134,7 +140,7 @@ footer  {
 }
 
 .navbar {
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   border-bottom: 1px solid #ccc;
   margin-bottom: 1rem;
 }

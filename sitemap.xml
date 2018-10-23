@@ -53,7 +53,92 @@
   </url>
   
   <url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://example.org/tags/apl/</loc>
+    <lastmod>2018-07-11T19:37:18-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/appveyor/</loc>
+    <lastmod>2018-10-20T07:41:22-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/ci/</loc>
+    <lastmod>2018-10-20T07:41:22-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/computer-history/</loc>
+    <lastmod>2018-09-27T19:35:53-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/computer-mythology/</loc>
+    <lastmod>2018-09-27T19:35:53-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/cs/</loc>
+    <lastmod>2018-10-20T07:41:22-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/css/</loc>
+    <lastmod>2018-09-13T20:47:12-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/cygwin/</loc>
+    <lastmod>2018-10-20T07:41:22-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/design/</loc>
+    <lastmod>2018-09-13T20:47:12-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/devops/</loc>
+    <lastmod>2017-03-20T10:12:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/golang/</loc>
+    <lastmod>2018-07-22T13:51:09-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/html/</loc>
+    <lastmod>2018-09-13T20:47:12-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/j/</loc>
+    <lastmod>2018-07-11T19:37:18-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/k/</loc>
+    <lastmod>2018-07-11T19:37:18-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/kubernetes/</loc>
+    <lastmod>2017-03-20T10:12:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -64,7 +149,50 @@
   </url>
   
   <url>
+    <loc>https://example.org/tags/profiling/</loc>
+    <lastmod>2018-10-12T17:59:57-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/python/</loc>
+    <lastmod>2018-10-12T17:59:57-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/software/</loc>
+    <lastmod>2018-09-14T18:12:43-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/systems-design/</loc>
+    <lastmod>2018-09-14T18:12:43-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/tachyons/</loc>
+    <lastmod>2018-09-13T20:47:12-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://example.org/tags/</loc>
+    <lastmod>2018-07-11T19:37:18-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/tla&#43;/</loc>
+    <lastmod>2018-09-14T18:12:43-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/tools/</loc>
+    <lastmod>2018-10-12T17:59:57-04:00</lastmod>
     <priority>0</priority>
   </url>
   
