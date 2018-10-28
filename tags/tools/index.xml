@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tools on sazl palimpsest</title>
+    <title>Tools on sazl</title>
     <link>https://example.org/tags/tools/</link>
-    <description>Recent content in Tools on sazl palimpsest</description>
+    <description>Recent content in Tools on sazl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Oct 2018 17:59:57 -0400</lastBuildDate>
