@@ -6,10 +6,19 @@
     <description>Recent content in Posts on sazl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Oct 2018 07:41:22 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 01 Dec 2018 20:03:25 -0500</lastBuildDate>
     
 	<atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Change of Perspective</title>
+      <link>https://example.org/posts/change-of-perspective/</link>
+      <pubDate>Sat, 01 Dec 2018 20:03:25 -0500</pubDate>
+      
+      <guid>https://example.org/posts/change-of-perspective/</guid>
+      <description>&amp;ldquo;How NOT to Measure Latency&amp;rdquo; by Gil Tene https://www.youtube.com/watch?v=lJ8ydIuPFeU</description>
+    </item>
     
     <item>
       <title>Appveyor Cygwin Build Tips</title>
@@ -35,7 +44,7 @@ init:-&amp;#39;%CYG_SH% &amp;#34;cygcheck -dc cygwin&amp;#34;&amp;#39;-&amp;#39;
       <description>There are no good python profiling tools. Here is what I consider necessary from a profiler:
  Cross platform Profiling of live applications Ability to generate profiler dumps (preferably gprof compatible) Call tree profiling Line-level profiling  The built-in python profilers cProfile and profile don&amp;rsquo;t meet 1, 2, and 5. 3rd party alternatives also fall short.
 Pyflame A great live profiler:
- low overhead live profiling of processes generates profiler dumps, convertible to gprof and svg Can generate Chrome  but it has some limitations</description>
+ low overhead. live profiling of processes. generates profiler dumps, convertible to gprof and svg.</description>
     </item>
     
     <item>
@@ -55,7 +64,7 @@ Linux: Where Don&amp;#39;t We Want To Go Today? -- Submitted by Pancrazio De Mau
       
       <guid>https://example.org/posts/tools-for-software-architecture/</guid>
       <description>Some thoughts on architecture and understanding big systems. If you can&amp;rsquo;t fit it all in your head, you don&amp;rsquo;t get it. We need tools to capture specifications and running systems more succinctly.
-I&amp;rsquo;d like diagnostic and instrumentation tools that capture data like a modern factory&amp;rsquo;s control systems. I&amp;rsquo;d love to be able to drill down from a high level overview of the system into the operations of a componenet, such as looking at a particular Kafka&amp;rsquo;s consumer group size.</description>
+I&amp;rsquo;d like diagnostic and instrumentation tools that capture data like a modern factory&amp;rsquo;s control systems. I&amp;rsquo;d love to be able to drill down from a high level overview of the system to the operations of a single component, such as looking at a particular Kafka&amp;rsquo;s consumer group size.</description>
     </item>
     
     <item>

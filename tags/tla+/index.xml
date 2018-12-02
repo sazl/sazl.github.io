@@ -18,7 +18,7 @@
       
       <guid>https://example.org/posts/tools-for-software-architecture/</guid>
       <description>Some thoughts on architecture and understanding big systems. If you can&amp;rsquo;t fit it all in your head, you don&amp;rsquo;t get it. We need tools to capture specifications and running systems more succinctly.
-I&amp;rsquo;d like diagnostic and instrumentation tools that capture data like a modern factory&amp;rsquo;s control systems. I&amp;rsquo;d love to be able to drill down from a high level overview of the system into the operations of a componenet, such as looking at a particular Kafka&amp;rsquo;s consumer group size.</description>
+I&amp;rsquo;d like diagnostic and instrumentation tools that capture data like a modern factory&amp;rsquo;s control systems. I&amp;rsquo;d love to be able to drill down from a high level overview of the system to the operations of a single component, such as looking at a particular Kafka&amp;rsquo;s consumer group size.</description>
     </item>
     
   </channel>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://example.org/posts/change-of-perspective/</loc>
+    <lastmod>2018-12-01T20:03:25-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://example.org/posts/appveyor-cygwin-build-tips/</loc>
     <lastmod>2018-10-20T07:41:22-04:00</lastmod>
   </url>
@@ -144,7 +149,7 @@
   
   <url>
     <loc>https://example.org/posts/</loc>
-    <lastmod>2018-10-20T07:41:22-04:00</lastmod>
+    <lastmod>2018-12-01T20:03:25-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -198,7 +203,7 @@
   
   <url>
     <loc>https://example.org/</loc>
-    <lastmod>2018-10-20T07:41:22-04:00</lastmod>
+    <lastmod>2018-12-01T20:03:25-05:00</lastmod>
     <priority>0</priority>
   </url>
   
