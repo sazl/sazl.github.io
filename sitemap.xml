@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://example.org/posts/year-of-the-five-emperors/</loc>
+    <lastmod>2018-12-16T00:17:45-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://example.org/posts/left-resources/</loc>
     <lastmod>2018-12-15T23:33:42-05:00</lastmod>
   </url>
@@ -129,6 +134,12 @@
   </url>
   
   <url>
+    <loc>https://example.org/tags/history/</loc>
+    <lastmod>2018-12-16T00:17:45-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://example.org/tags/html/</loc>
     <lastmod>2018-09-13T20:47:12-04:00</lastmod>
     <priority>0</priority>
@@ -166,7 +177,7 @@
   
   <url>
     <loc>https://example.org/posts/</loc>
-    <lastmod>2018-12-15T23:33:42-05:00</lastmod>
+    <lastmod>2018-12-16T00:17:45-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -189,8 +200,20 @@
   </url>
   
   <url>
+    <loc>https://example.org/tags/rome/</loc>
+    <lastmod>2018-12-16T00:17:45-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://example.org/tags/software/</loc>
     <lastmod>2018-09-14T18:12:43-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/succession/</loc>
+    <lastmod>2018-12-16T00:17:45-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -232,7 +255,7 @@
   
   <url>
     <loc>https://example.org/</loc>
-    <lastmod>2018-12-15T23:33:42-05:00</lastmod>
+    <lastmod>2018-12-16T00:17:45-05:00</lastmod>
     <priority>0</priority>
   </url>
   

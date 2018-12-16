@@ -111,6 +111,15 @@
     </item>
     
     <item>
+      <title>History</title>
+      <link>https://example.org/tags/history/</link>
+      <pubDate>Sun, 16 Dec 2018 00:17:45 -0500</pubDate>
+      
+      <guid>https://example.org/tags/history/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Html</title>
       <link>https://example.org/tags/html/</link>
       <pubDate>Thu, 13 Sep 2018 20:47:12 -0400</pubDate>
@@ -192,11 +201,29 @@
     </item>
     
     <item>
+      <title>Rome</title>
+      <link>https://example.org/tags/rome/</link>
+      <pubDate>Sun, 16 Dec 2018 00:17:45 -0500</pubDate>
+      
+      <guid>https://example.org/tags/rome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Software</title>
       <link>https://example.org/tags/software/</link>
       <pubDate>Fri, 14 Sep 2018 18:12:43 -0400</pubDate>
       
       <guid>https://example.org/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Succession</title>
+      <link>https://example.org/tags/succession/</link>
+      <pubDate>Sun, 16 Dec 2018 00:17:45 -0500</pubDate>
+      
+      <guid>https://example.org/tags/succession/</guid>
       <description></description>
     </item>
     
