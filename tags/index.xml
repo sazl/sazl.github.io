@@ -147,6 +147,24 @@
     </item>
     
     <item>
+      <title>Podcasts</title>
+      <link>https://example.org/tags/podcasts/</link>
+      <pubDate>Sat, 15 Dec 2018 23:33:42 -0500</pubDate>
+      
+      <guid>https://example.org/tags/podcasts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Politics</title>
+      <link>https://example.org/tags/politics/</link>
+      <pubDate>Sat, 15 Dec 2018 23:33:42 -0500</pubDate>
+      
+      <guid>https://example.org/tags/politics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Profiling</title>
       <link>https://example.org/tags/profiling/</link>
       <pubDate>Fri, 12 Oct 2018 17:59:57 -0400</pubDate>
@@ -161,6 +179,15 @@
       <pubDate>Fri, 12 Oct 2018 17:59:57 -0400</pubDate>
       
       <guid>https://example.org/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>https://example.org/tags/resources/</link>
+      <pubDate>Sat, 15 Dec 2018 23:33:42 -0500</pubDate>
+      
+      <guid>https://example.org/tags/resources/</guid>
       <description></description>
     </item>
     
@@ -206,6 +233,15 @@
       <pubDate>Fri, 12 Oct 2018 17:59:57 -0400</pubDate>
       
       <guid>https://example.org/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Youtube</title>
+      <link>https://example.org/tags/youtube/</link>
+      <pubDate>Sat, 15 Dec 2018 23:33:42 -0500</pubDate>
+      
+      <guid>https://example.org/tags/youtube/</guid>
       <description></description>
     </item>
     
