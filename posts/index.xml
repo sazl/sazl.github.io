@@ -42,6 +42,17 @@ Thinking Above the Code by Leslie Lamport</description>
     </item>
     
     <item>
+      <title>Apple Jxa Notes</title>
+      <link>https://example.org/posts/apple-jxa-notes/</link>
+      <pubDate>Tue, 27 Nov 2018 20:07:08 -0500</pubDate>
+      
+      <guid>https://example.org/posts/apple-jxa-notes/</guid>
+      <description>I&amp;rsquo;ve been using JXA at work to automate installations and upgrades of our desktop software. Typical of Apple APIs, it&amp;rsquo;s terribly documented and its level of support isn&amp;rsquo;t clear.
+Besides the initial announcements and a smattering of content on the AppleScript pages, most information on JXA has to be pieced together from random forums and StackOverflow.
+This was also my experience when dealing with trying to sign 3rd party apps on OSX.</description>
+    </item>
+    
+    <item>
       <title>Appveyor Cygwin Build Tips</title>
       <link>https://example.org/posts/appveyor-cygwin-build-tips/</link>
       <pubDate>Sat, 20 Oct 2018 07:41:22 -0400</pubDate>

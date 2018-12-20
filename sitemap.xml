@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>https://example.org/posts/apple-jxa-notes/</loc>
+    <lastmod>2018-11-27T20:07:08-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://example.org/posts/appveyor-cygwin-build-tips/</loc>
     <lastmod>2018-10-20T07:41:22-04:00</lastmod>
   </url>
