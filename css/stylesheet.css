@@ -166,3 +166,9 @@ q {
   margin-top: 1.5em;
   background-color: #eef;
 }
+
+.subtitle {
+  font-size: 0.8em;
+  margin-left: 0.5rem;
+  color: #009420;
+}
