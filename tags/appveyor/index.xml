@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Appveyor on sazl</title>
-    <link>https://example.org/tags/appveyor/</link>
+    <link>https://sazl.ca/tags/appveyor/</link>
     <description>Recent content in Appveyor on sazl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Oct 2018 07:41:22 -0400</lastBuildDate>
     
-	<atom:link href="https://example.org/tags/appveyor/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sazl.ca/tags/appveyor/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Appveyor Cygwin Build Tips</title>
-      <link>https://example.org/posts/appveyor-cygwin-build-tips/</link>
+      <link>https://sazl.ca/posts/appveyor-cygwin-build-tips/</link>
       <pubDate>Sat, 20 Oct 2018 07:41:22 -0400</pubDate>
       
-      <guid>https://example.org/posts/appveyor-cygwin-build-tips/</guid>
+      <guid>https://sazl.ca/posts/appveyor-cygwin-build-tips/</guid>
       <description>Some tips for working with Appveyor and Cygwin:
 Git Client init:-gitconfig--globalcore.symlinkstrue-gitconfig--globalcore.autocrlfinput More Info: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code
 Environment Variables Set Windows environment variables so that they&amp;rsquo;re accessible from within Cygwin.

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Resources on sazl</title>
-    <link>https://example.org/tags/resources/</link>
+    <link>https://sazl.ca/tags/resources/</link>
     <description>Recent content in Resources on sazl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 15 Dec 2018 23:33:42 -0500</lastBuildDate>
     
-	<atom:link href="https://example.org/tags/resources/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sazl.ca/tags/resources/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Left Resources</title>
-      <link>https://example.org/posts/left-resources/</link>
+      <link>https://sazl.ca/posts/left-resources/</link>
       <pubDate>Sat, 15 Dec 2018 23:33:42 -0500</pubDate>
       
-      <guid>https://example.org/posts/left-resources/</guid>
+      <guid>https://sazl.ca/posts/left-resources/</guid>
       <description>“Struggle so that all may live this rich, overflowing life. And be sure that in this struggle you will find a joy greater than anything else can give.” ― Kropotkin News: Focused on independent news
 Democracy Now: https://www.democracynow.org/
 Real News Network: https://therealnews.com/

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on sazl</title>
-    <link>https://example.org/posts/</link>
+    <link>https://sazl.ca/posts/</link>
     <description>Recent content in Posts on sazl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 17 Dec 2018 18:44:17 -0500</lastBuildDate>
     
-	<atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sazl.ca/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Digital Humanities Resources</title>
-      <link>https://example.org/posts/digital-humanities-resources/</link>
+      <link>https://sazl.ca/posts/digital-humanities-resources/</link>
       <pubDate>Mon, 17 Dec 2018 18:44:17 -0500</pubDate>
       
-      <guid>https://example.org/posts/digital-humanities-resources/</guid>
+      <guid>https://sazl.ca/posts/digital-humanities-resources/</guid>
       <description>Pleiades: https://pleiades.stoa.org/home
 Features  Ancient World Locations, places, and features API Downloads Search  Summary  Pleiades gives scholars, students, and enthusiasts worldwide the ability to use, create, and share historical geographic information about the ancient world in digital form. At present, Pleiades has extensive coverage for the Greek and Roman world, and is expanding into Ancient Near Eastern, Byzantine, Celtic, and Early Medieval geography. 
 Papyri http://papyri.info/
@@ -25,10 +25,10 @@ Features  Ancient History Search Documents  Summary  Papyri.</description>
     
     <item>
       <title>Year of the Five Emperors</title>
-      <link>https://example.org/posts/year-of-the-five-emperors/</link>
+      <link>https://sazl.ca/posts/year-of-the-five-emperors/</link>
       <pubDate>Sun, 16 Dec 2018 00:17:45 -0500</pubDate>
       
-      <guid>https://example.org/posts/year-of-the-five-emperors/</guid>
+      <guid>https://sazl.ca/posts/year-of-the-five-emperors/</guid>
       <description>I&amp;rsquo;ve recently been interested in reading about the lives of the Roman Emperors and their various intrigues. I&amp;rsquo;m having trouble keeping things in memory so I&amp;rsquo;ve started charting out the lines of succession.
 Below is an example starting from Antonius Pius&amp;rsquo; rule as part of the Nerva-Antonine Dynasty and ending on the last ruler of the Severan Dynasty.   
 I&amp;rsquo;d love to automate this process but I&amp;rsquo;m having trouble tracking down resources.</description>
@@ -36,10 +36,10 @@ I&amp;rsquo;d love to automate this process but I&amp;rsquo;m having trouble tra
     
     <item>
       <title>Left Resources</title>
-      <link>https://example.org/posts/left-resources/</link>
+      <link>https://sazl.ca/posts/left-resources/</link>
       <pubDate>Sat, 15 Dec 2018 23:33:42 -0500</pubDate>
       
-      <guid>https://example.org/posts/left-resources/</guid>
+      <guid>https://sazl.ca/posts/left-resources/</guid>
       <description>“Struggle so that all may live this rich, overflowing life. And be sure that in this struggle you will find a joy greater than anything else can give.” ― Kropotkin News: Focused on independent news
 Democracy Now: https://www.democracynow.org/
 Real News Network: https://therealnews.com/
@@ -55,20 +55,20 @@ Black Socialists of America: https://blacksocialists.</description>
     
     <item>
       <title>Change of Perspective</title>
-      <link>https://example.org/posts/change-of-perspective/</link>
+      <link>https://sazl.ca/posts/change-of-perspective/</link>
       <pubDate>Sat, 01 Dec 2018 20:03:25 -0500</pubDate>
       
-      <guid>https://example.org/posts/change-of-perspective/</guid>
+      <guid>https://sazl.ca/posts/change-of-perspective/</guid>
       <description>How NOT to Measure Latency by Gil Tene
 Thinking Above the Code by Leslie Lamport</description>
     </item>
     
     <item>
       <title>Apple Jxa Notes</title>
-      <link>https://example.org/posts/apple-jxa-notes/</link>
+      <link>https://sazl.ca/posts/apple-jxa-notes/</link>
       <pubDate>Tue, 27 Nov 2018 20:07:08 -0500</pubDate>
       
-      <guid>https://example.org/posts/apple-jxa-notes/</guid>
+      <guid>https://sazl.ca/posts/apple-jxa-notes/</guid>
       <description>I&amp;rsquo;ve been using JXA at work to automate installations and upgrades of our desktop software. Typical of Apple APIs, it&amp;rsquo;s terribly documented and its level of support isn&amp;rsquo;t clear.
 Besides the initial announcements and a smattering of content on the AppleScript pages, most information on JXA has to be pieced together from random forums and StackOverflow.
 This was also my experience when dealing with trying to sign 3rd party apps on OSX.</description>
@@ -76,10 +76,10 @@ This was also my experience when dealing with trying to sign 3rd party apps on O
     
     <item>
       <title>Appveyor Cygwin Build Tips</title>
-      <link>https://example.org/posts/appveyor-cygwin-build-tips/</link>
+      <link>https://sazl.ca/posts/appveyor-cygwin-build-tips/</link>
       <pubDate>Sat, 20 Oct 2018 07:41:22 -0400</pubDate>
       
-      <guid>https://example.org/posts/appveyor-cygwin-build-tips/</guid>
+      <guid>https://sazl.ca/posts/appveyor-cygwin-build-tips/</guid>
       <description>Some tips for working with Appveyor and Cygwin:
 Git Client init:-gitconfig--globalcore.symlinkstrue-gitconfig--globalcore.autocrlfinput More Info: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code
 Environment Variables Set Windows environment variables so that they&amp;rsquo;re accessible from within Cygwin.
@@ -91,10 +91,10 @@ init:-&amp;#39;%CYG_SH% &amp;#34;cygcheck -dc cygwin&amp;#34;&amp;#39;-&amp;#39;
     
     <item>
       <title>The State of Python Profiling</title>
-      <link>https://example.org/posts/the-state-of-python-profiling/</link>
+      <link>https://sazl.ca/posts/the-state-of-python-profiling/</link>
       <pubDate>Fri, 12 Oct 2018 17:59:57 -0400</pubDate>
       
-      <guid>https://example.org/posts/the-state-of-python-profiling/</guid>
+      <guid>https://sazl.ca/posts/the-state-of-python-profiling/</guid>
       <description>There are no good python profiling tools. Here is what I consider necessary from a profiler:
  Cross platform Profiling of live applications Ability to generate profiler dumps (preferably gprof compatible) Call tree profiling Line-level profiling  The built-in python profilers cProfile and profile don&amp;rsquo;t meet 1, 2, and 5. 3rd party alternatives also fall short.
 Pyflame A great live profiler:
@@ -103,30 +103,30 @@ Pyflame A great live profiler:
     
     <item>
       <title>Computer Mythology</title>
-      <link>https://example.org/posts/computer-mythology/</link>
+      <link>https://sazl.ca/posts/computer-mythology/</link>
       <pubDate>Thu, 27 Sep 2018 19:35:53 -0400</pubDate>
       
-      <guid>https://example.org/posts/computer-mythology/</guid>
+      <guid>https://sazl.ca/posts/computer-mythology/</guid>
       <description>I love computer mythology, reading about old legends and great hackers surmounting the odds.
 Linux: Where Don&amp;#39;t We Want To Go Today? -- Submitted by Pancrazio De Mauro, paraphrasing some well-known sales talk I also like that the communities are so different in their approaches to defining computing</description>
     </item>
     
     <item>
       <title>Tools for Software Architecture</title>
-      <link>https://example.org/posts/tools-for-software-architecture/</link>
+      <link>https://sazl.ca/posts/tools-for-software-architecture/</link>
       <pubDate>Fri, 14 Sep 2018 18:12:43 -0400</pubDate>
       
-      <guid>https://example.org/posts/tools-for-software-architecture/</guid>
+      <guid>https://sazl.ca/posts/tools-for-software-architecture/</guid>
       <description>Some thoughts on architecture and understanding big systems. If you can&amp;rsquo;t fit it all in your head, you don&amp;rsquo;t get it. We need tools to capture specifications and running systems more succinctly.
 I&amp;rsquo;d like diagnostic and instrumentation tools that capture data like a modern factory&amp;rsquo;s control systems. I&amp;rsquo;d love to be able to drill down from a high level overview of the system to the operations of a single component, such as looking at a particular Kafka&amp;rsquo;s consumer group size.</description>
     </item>
     
     <item>
       <title>Tachyons Is Nice for Templates</title>
-      <link>https://example.org/posts/tachyons-is-nice-for-templates/</link>
+      <link>https://sazl.ca/posts/tachyons-is-nice-for-templates/</link>
       <pubDate>Thu, 13 Sep 2018 20:47:12 -0400</pubDate>
       
-      <guid>https://example.org/posts/tachyons-is-nice-for-templates/</guid>
+      <guid>https://sazl.ca/posts/tachyons-is-nice-for-templates/</guid>
       <description>Tachyons is Nice Tachyons.io is great for templates and prototypes. I wouldn&amp;rsquo;t write a full landing page in it or anything that&amp;rsquo;s not dynamically generated. Why? because it&amp;rsquo;s got the same problems as css class composition in HTML, there&amp;rsquo;s no way to group css classes you import.
 An example:
 &amp;lt;div class=&amp;#34;aside fl w-80 ma1 pa2 lh-copy&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;aside-heading lh-title&amp;#34;&amp;gt;Technologies&amp;lt;/div&amp;gt; &amp;lt;ul class=&amp;#34;list pl0 pt3&amp;#34;&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/div&amp;gt; It gets hard to stack css classes into the html tag.</description>
@@ -134,29 +134,29 @@ An example:
     
     <item>
       <title>Picking a Technology</title>
-      <link>https://example.org/posts/picking-a-technology/</link>
+      <link>https://sazl.ca/posts/picking-a-technology/</link>
       <pubDate>Tue, 31 Jul 2018 00:26:48 -0400</pubDate>
       
-      <guid>https://example.org/posts/picking-a-technology/</guid>
+      <guid>https://sazl.ca/posts/picking-a-technology/</guid>
       <description>Picking a technology, either:
  Pick a well-maintained, robust, and boring solution that gets you 90% of the way there. Pick a new solution that scratches your exact itch. You must be willing to maintain it yourself.  There is a trade-off between how specialized a tool is at solving your problem and how much work is involved in maintaining it over time.</description>
     </item>
     
     <item>
       <title>Go Link to Package Url</title>
-      <link>https://example.org/posts/go-link-to-package-url/</link>
+      <link>https://sazl.ca/posts/go-link-to-package-url/</link>
       <pubDate>Sun, 22 Jul 2018 13:51:09 -0400</pubDate>
       
-      <guid>https://example.org/posts/go-link-to-package-url/</guid>
+      <guid>https://sazl.ca/posts/go-link-to-package-url/</guid>
       <description>When creating a go pkg, please make your package URI point to actual documentation (if possible): k8s.io/kubernetes/pkg/kubectl/genericclioptions</description>
     </item>
     
     <item>
       <title>APL My Old Friend</title>
-      <link>https://example.org/posts/apl-my-old-friend/</link>
+      <link>https://sazl.ca/posts/apl-my-old-friend/</link>
       <pubDate>Wed, 11 Jul 2018 19:37:18 -0400</pubDate>
       
-      <guid>https://example.org/posts/apl-my-old-friend/</guid>
+      <guid>https://sazl.ca/posts/apl-my-old-friend/</guid>
       <description>I&amp;rsquo;ve been getting back into J after reading this twitter thread:
 https://twitter.com/digitalbeard/status/987775955220430848
 I first learned of J around 10 years ago. I remember reading &amp;ldquo;Easy J&amp;rdquo; and being amazed. Here was something so alien from everything I thought I knew about programming languages. The verbs, adverbs, and conjunctions were so cohesive, everything seemed to flow effortlessly. Writing J programs was somewhat akin to poetry, something explained better by Alan J. Perlis.</description>
@@ -164,10 +164,10 @@ I first learned of J around 10 years ago. I remember reading &amp;ldquo;Easy J&a
     
     <item>
       <title>Installing Kubernetes Using kubeadm</title>
-      <link>https://example.org/posts/problems-in-the-kubaeadm-guide/</link>
+      <link>https://sazl.ca/posts/problems-in-the-kubaeadm-guide/</link>
       <pubDate>Mon, 20 Mar 2017 10:12:00 -0400</pubDate>
       
-      <guid>https://example.org/posts/problems-in-the-kubaeadm-guide/</guid>
+      <guid>https://sazl.ca/posts/problems-in-the-kubaeadm-guide/</guid>
       <description>The deployment of Kubernetes has become a little easier using the kubeadm tool. The tools are still in alpha and the guide is still not as thorough as I would have hoped.
 Installing Flannel as a Pod Network Once you&amp;rsquo;ve completed the first two steps, you should have a working master node. To add additional child nodes you must install a pod network. I chose to install Flannel but there are other options available.</description>
     </item>
