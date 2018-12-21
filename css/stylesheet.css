@@ -110,10 +110,14 @@ h1 {
 
 h2 {
   font-size: 1.7rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 h3 {
   font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 h4  {
@@ -153,4 +157,12 @@ footer  {
   padding: 0.5rem 1rem;
   border-bottom: 1px solid #ccc;
   margin-bottom: 1rem;
+}
+
+q {
+  border: 1px solid grey;
+  display: block;
+  padding: 1em;
+  margin-top: 1.5em;
+  background-color: #eef;
 }
