@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on sazl</title>
+    <link>https://sazl.ca/tags/python/</link>
+    <description>Recent content in Python on sazl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Oct 2018 17:59:57 -0400</lastBuildDate>
+    
+	<atom:link href="https://sazl.ca/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The State of Python Profiling</title>
+      <link>https://sazl.ca/posts/the-state-of-python-profiling/</link>
+      <pubDate>Fri, 12 Oct 2018 17:59:57 -0400</pubDate>
+      
+      <guid>https://sazl.ca/posts/the-state-of-python-profiling/</guid>
+      <description>There are no good python profiling tools. Here is what I consider necessary from a profiler:
+ Cross platform Profiling of live applications Ability to generate profiler dumps (preferably gprof compatible) Call tree profiling Line-level profiling  The built-in python profilers cProfile and profile don&amp;rsquo;t meet 1, 2, and 5. 3rd party alternatives also fall short.
+Pyflame A great live profiler:
+ low overhead. live profiling of processes. generates profiler dumps, convertible to gprof and svg.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cs on sazl</title>
+    <link>https://sazl.ca/tags/cs/</link>
+    <description>Recent content in Cs on sazl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Oct 2018 07:41:22 -0400</lastBuildDate>
+    
+	<atom:link href="https://sazl.ca/tags/cs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Appveyor Cygwin Build Tips</title>
+      <link>https://sazl.ca/posts/appveyor-cygwin-build-tips/</link>
+      <pubDate>Sat, 20 Oct 2018 07:41:22 -0400</pubDate>
+      
+      <guid>https://sazl.ca/posts/appveyor-cygwin-build-tips/</guid>
+      <description>Some tips for working with Appveyor and Cygwin:
+Git Client init:-gitconfig--globalcore.symlinkstrue-gitconfig--globalcore.autocrlfinput More Info: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code
+Environment Variables Set Windows environment variables so that they&amp;rsquo;re accessible from within Cygwin.
+init:-&amp;#39;FOR /F &amp;#34;tokens=* USEBACKQ&amp;#34; %%F IN (`%CYG_PATH% %APPVEYOR_BUILD_FOLDER%`) DO SET BUILD_FOLDER=%%F&amp;#39; This is equivalent to:
+export BUILD_FOLDER=$APPVEYOR_BUILD_FOLDER Building on Cygwin x86 and x86_64 environment:matrix:-CYG_ARCH:x86CYG_ROOT:C:/cygwinCYG_CACHE:C:/cygwin/var/cache/setupCYG_SH:C:/cygwin/bin/bash-lcCYG_INSTALL:C:/cygwin/setup-x86.exe-q-PCYG_PATH:C:/cygwin/bin/cygpath-u-CYG_ARCH:x86_64CYG_ROOT:C:/cygwin64CYG_CACHE:C:/cygwin64/var/cache/setupCYG_SH:C:/cygwin64/bin/bash-lcCYG_INSTALL:C:/cygwin64/setup-x86_64.exe-q-PCYG_PATH:C:/cygwin64/bin/cygpath-u Cache Cache Cygwin installs between build runs:
+cache:-&amp;#39;%CYG_CACHE%&amp;#39; Installing Cygwin Packages Use apt-cyg to install Cygwin packages.
+init:-&amp;#39;%CYG_SH% &amp;#34;cygcheck -dc cygwin&amp;#34;&amp;#39;-&amp;#39;%CYG_INSTALL% &amp;#34;wget&amp;#34;&amp;#39;-&amp;#39;%CYG_SH% &amp;#34;wget rawgit.</description>
+    </item>
+    
+    <item>
+      <title>The State of Python Profiling</title>
+      <link>https://sazl.ca/posts/the-state-of-python-profiling/</link>
+      <pubDate>Fri, 12 Oct 2018 17:59:57 -0400</pubDate>
+      
+      <guid>https://sazl.ca/posts/the-state-of-python-profiling/</guid>
+      <description>There are no good python profiling tools. Here is what I consider necessary from a profiler:
+ Cross platform Profiling of live applications Ability to generate profiler dumps (preferably gprof compatible) Call tree profiling Line-level profiling  The built-in python profilers cProfile and profile don&amp;rsquo;t meet 1, 2, and 5. 3rd party alternatives also fall short.
+Pyflame A great live profiler:
+ low overhead. live profiling of processes. generates profiler dumps, convertible to gprof and svg.</description>
+    </item>
+    
+    <item>
+      <title>Computer Mythology</title>
+      <link>https://sazl.ca/posts/computer-mythology/</link>
+      <pubDate>Thu, 27 Sep 2018 19:35:53 -0400</pubDate>
+      
+      <guid>https://sazl.ca/posts/computer-mythology/</guid>
+      <description>I love computer mythology, reading about old legends and great hackers surmounting the odds.
+Linux: Where Don&amp;#39;t We Want To Go Today? -- Submitted by Pancrazio De Mauro, paraphrasing some well-known sales talk I also like that the communities are so different in their approaches to defining computing</description>
+    </item>
+    
+    <item>
+      <title>Tools for Software Architecture</title>
+      <link>https://sazl.ca/posts/tools-for-software-architecture/</link>
+      <pubDate>Fri, 14 Sep 2018 18:12:43 -0400</pubDate>
+      
+      <guid>https://sazl.ca/posts/tools-for-software-architecture/</guid>
+      <description>Some thoughts on architecture and understanding big systems. If you can&amp;rsquo;t fit it all in your head, you don&amp;rsquo;t get it. We need tools to capture specifications and running systems more succinctly.
+I&amp;rsquo;d like diagnostic and instrumentation tools that capture data like a modern factory&amp;rsquo;s control systems. I&amp;rsquo;d love to be able to drill down from a high level overview of the system to the operations of a single component, such as looking at a particular Kafka&amp;rsquo;s consumer group size.</description>
+    </item>
+    
+    <item>
+      <title>Tachyons Is Nice for Templates</title>
+      <link>https://sazl.ca/posts/tachyons-is-nice-for-templates/</link>
+      <pubDate>Thu, 13 Sep 2018 20:47:12 -0400</pubDate>
+      
+      <guid>https://sazl.ca/posts/tachyons-is-nice-for-templates/</guid>
+      <description>Tachyons is Nice Tachyons.io is great for templates and prototypes. I wouldn&amp;rsquo;t write a full landing page in it or anything that&amp;rsquo;s not dynamically generated. Why? because it&amp;rsquo;s got the same problems as css class composition in HTML, there&amp;rsquo;s no way to group css classes you import.
+An example:
+&amp;lt;div class=&amp;#34;aside fl w-80 ma1 pa2 lh-copy&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;aside-heading lh-title&amp;#34;&amp;gt;Technologies&amp;lt;/div&amp;gt; &amp;lt;ul class=&amp;#34;list pl0 pt3&amp;#34;&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/div&amp;gt; It gets hard to stack css classes into the html tag.</description>
+    </item>
+    
+    <item>
+      <title>Picking a Technology</title>
+      <link>https://sazl.ca/posts/picking-a-technology/</link>
+      <pubDate>Tue, 31 Jul 2018 00:26:48 -0400</pubDate>
+      
+      <guid>https://sazl.ca/posts/picking-a-technology/</guid>
+      <description>Picking a technology, either:
+ Pick a well-maintained, robust, and boring solution that gets you 90% of the way there. Pick a new solution that scratches your exact itch. You must be willing to maintain it yourself.  There is a trade-off between how specialized a tool is at solving your problem and how much work is involved in maintaining it over time.</description>
+    </item>
+    
+    <item>
+      <title>Go Link to Package Url</title>
+      <link>https://sazl.ca/posts/go-link-to-package-url/</link>
+      <pubDate>Sun, 22 Jul 2018 13:51:09 -0400</pubDate>
+      
+      <guid>https://sazl.ca/posts/go-link-to-package-url/</guid>
+      <description>When creating a go pkg, please make your package URI point to actual documentation (if possible): k8s.io/kubernetes/pkg/kubectl/genericclioptions</description>
+    </item>
+    
+    <item>
+      <title>APL My Old Friend</title>
+      <link>https://sazl.ca/posts/apl-my-old-friend/</link>
+      <pubDate>Wed, 11 Jul 2018 19:37:18 -0400</pubDate>
+      
+      <guid>https://sazl.ca/posts/apl-my-old-friend/</guid>
+      <description>I&amp;rsquo;ve been getting back into J after reading this twitter thread:
+https://twitter.com/digitalbeard/status/987775955220430848
+I first learned of J around 10 years ago. I remember reading &amp;ldquo;Easy J&amp;rdquo; and being amazed. Here was something so alien from everything I thought I knew about programming languages. The verbs, adverbs, and conjunctions were so cohesive, everything seemed to flow effortlessly. Writing J programs was somewhat akin to poetry, something explained better by Alan J. Perlis.</description>
+    </item>
+    
+    <item>
+      <title>Installing Kubernetes Using kubeadm</title>
+      <link>https://sazl.ca/posts/problems-in-the-kubaeadm-guide/</link>
+      <pubDate>Mon, 20 Mar 2017 10:12:00 -0400</pubDate>
+      
+      <guid>https://sazl.ca/posts/problems-in-the-kubaeadm-guide/</guid>
+      <description>The deployment of Kubernetes has become a little easier using the kubeadm tool. The tools are still in alpha and the guide is still not as thorough as I would have hoped.
+Installing Flannel as a Pod Network Once you&amp;rsquo;ve completed the first two steps, you should have a working master node. To add additional child nodes you must install a pod network. I chose to install Flannel but there are other options available.</description>
+    </item>
+    
+  </channel>
+</rss>

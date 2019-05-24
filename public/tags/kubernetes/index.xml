@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kubernetes on sazl</title>
+    <link>https://sazl.ca/tags/kubernetes/</link>
+    <description>Recent content in Kubernetes on sazl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Mar 2017 10:12:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://sazl.ca/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installing Kubernetes Using kubeadm</title>
+      <link>https://sazl.ca/posts/problems-in-the-kubaeadm-guide/</link>
+      <pubDate>Mon, 20 Mar 2017 10:12:00 -0400</pubDate>
+      
+      <guid>https://sazl.ca/posts/problems-in-the-kubaeadm-guide/</guid>
+      <description>The deployment of Kubernetes has become a little easier using the kubeadm tool. The tools are still in alpha and the guide is still not as thorough as I would have hoped.
+Installing Flannel as a Pod Network Once you&amp;rsquo;ve completed the first two steps, you should have a working master node. To add additional child nodes you must install a pod network. I chose to install Flannel but there are other options available.</description>
+    </item>
+    
+  </channel>
+</rss>

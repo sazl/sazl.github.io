@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://sazl.ca/posts/digital-humanities-resources/</loc>
+    <lastmod>2018-12-17T18:44:17-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/posts/year-of-the-five-emperors/</loc>
+    <lastmod>2018-12-16T00:17:45-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/posts/left-resources/</loc>
+    <lastmod>2018-12-15T23:33:42-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/posts/change-of-perspective/</loc>
+    <lastmod>2018-12-01T20:03:25-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/posts/apple-jxa-notes/</loc>
+    <lastmod>2018-11-27T20:07:08-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/posts/appveyor-cygwin-build-tips/</loc>
+    <lastmod>2018-10-20T07:41:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/posts/the-state-of-python-profiling/</loc>
+    <lastmod>2018-10-12T17:59:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/about/</loc>
+    <lastmod>2018-10-12T17:55:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/posts/computer-mythology/</loc>
+    <lastmod>2018-09-27T19:35:53-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/posts/tools-for-software-architecture/</loc>
+    <lastmod>2018-09-14T18:12:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/posts/tachyons-is-nice-for-templates/</loc>
+    <lastmod>2018-09-13T20:47:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/posts/picking-a-technology/</loc>
+    <lastmod>2018-07-31T00:26:48-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/posts/go-link-to-package-url/</loc>
+    <lastmod>2018-07-22T13:51:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/posts/apl-my-old-friend/</loc>
+    <lastmod>2018-07-11T19:37:18-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/posts/problems-in-the-kubaeadm-guide/</loc>
+    <lastmod>2017-03-20T10:12:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/apl/</loc>
+    <lastmod>2018-07-11T19:37:18-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/appveyor/</loc>
+    <lastmod>2018-10-20T07:41:22-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/ci/</loc>
+    <lastmod>2018-10-20T07:41:22-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/computer-history/</loc>
+    <lastmod>2018-09-27T19:35:53-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/computer-mythology/</loc>
+    <lastmod>2018-09-27T19:35:53-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/cs/</loc>
+    <lastmod>2018-10-20T07:41:22-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/css/</loc>
+    <lastmod>2018-09-13T20:47:12-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/cygwin/</loc>
+    <lastmod>2018-10-20T07:41:22-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/design/</loc>
+    <lastmod>2018-09-13T20:47:12-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/devops/</loc>
+    <lastmod>2017-03-20T10:12:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/golang/</loc>
+    <lastmod>2018-07-22T13:51:09-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/history/</loc>
+    <lastmod>2018-12-16T00:17:45-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/html/</loc>
+    <lastmod>2018-09-13T20:47:12-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/j/</loc>
+    <lastmod>2018-07-11T19:37:18-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/k/</loc>
+    <lastmod>2018-07-11T19:37:18-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/kubernetes/</loc>
+    <lastmod>2017-03-20T10:12:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/podcasts/</loc>
+    <lastmod>2018-12-15T23:33:42-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/politics/</loc>
+    <lastmod>2018-12-15T23:33:42-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/posts/</loc>
+    <lastmod>2018-12-17T18:44:17-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/profiling/</loc>
+    <lastmod>2018-10-12T17:59:57-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/python/</loc>
+    <lastmod>2018-10-12T17:59:57-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/resources/</loc>
+    <lastmod>2018-12-15T23:33:42-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/rome/</loc>
+    <lastmod>2018-12-16T00:17:45-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/software/</loc>
+    <lastmod>2018-09-14T18:12:43-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/succession/</loc>
+    <lastmod>2018-12-16T00:17:45-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/systems-design/</loc>
+    <lastmod>2018-09-14T18:12:43-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/tachyons/</loc>
+    <lastmod>2018-09-13T20:47:12-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/</loc>
+    <lastmod>2018-07-11T19:37:18-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/tla&#43;/</loc>
+    <lastmod>2018-09-14T18:12:43-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/tools/</loc>
+    <lastmod>2018-10-12T17:59:57-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/tags/youtube/</loc>
+    <lastmod>2018-12-15T23:33:42-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/</loc>
+    <lastmod>2018-12-17T18:44:17-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
