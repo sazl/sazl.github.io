@@ -1,0 +1,24 @@
+baseURL = "https://sazl.ca"
+languageCode = "en-us"
+title = "sazl"
+theme = "basics"
+paginate = 10
+staticDir = ["static"]
+
+tags = ["CS"]
+
+enableRobotsTXT = true
+enableEmoji = true
+
+pygmentsUseClasses=true
+pygmentsCodefencesGuessSyntax=true
+pygmentOptions = "linenos=table"
+pygmentsCodeFences = true
+
+[taxonomies]
+    tag = "tags"
+
+[params]
+    author = "Sami Zeinelabdin"
+    github = "sazl"
+    SubTitle = "Often incomplete"
