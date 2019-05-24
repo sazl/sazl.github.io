@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on sazl</title>
+    <link>https://sazl.ca/tags/design/</link>
+    <description>Recent content in Design on sazl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Sep 2018 20:47:12 -0400</lastBuildDate>
+    
+	<atom:link href="https://sazl.ca/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tachyons Is Nice for Templates</title>
+      <link>https://sazl.ca/posts/tachyons-is-nice-for-templates/</link>
+      <pubDate>Thu, 13 Sep 2018 20:47:12 -0400</pubDate>
+      
+      <guid>https://sazl.ca/posts/tachyons-is-nice-for-templates/</guid>
+      <description>Tachyons is Nice Tachyons.io is great for templates and prototypes. I wouldn&amp;rsquo;t write a full landing page in it or anything that&amp;rsquo;s not dynamically generated. Why? because it&amp;rsquo;s got the same problems as css class composition in HTML, there&amp;rsquo;s no way to group css classes you import.
+An example:
+&amp;lt;div class=&amp;#34;aside fl w-80 ma1 pa2 lh-copy&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;aside-heading lh-title&amp;#34;&amp;gt;Technologies&amp;lt;/div&amp;gt; &amp;lt;ul class=&amp;#34;list pl0 pt3&amp;#34;&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/div&amp;gt; It gets hard to stack css classes into the html tag.</description>
+    </item>
+    
+  </channel>
+</rss>
