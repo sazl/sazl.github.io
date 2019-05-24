@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Mythology on sazl</title>
+    <link>https://sazl.ca/tags/computer-mythology/</link>
+    <description>Recent content in Computer Mythology on sazl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Sep 2018 19:35:53 -0400</lastBuildDate>
+    
+	<atom:link href="https://sazl.ca/tags/computer-mythology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Computer Mythology</title>
+      <link>https://sazl.ca/posts/computer-mythology/</link>
+      <pubDate>Thu, 27 Sep 2018 19:35:53 -0400</pubDate>
+      
+      <guid>https://sazl.ca/posts/computer-mythology/</guid>
+      <description>I love computer mythology, reading about old legends and great hackers surmounting the odds.
+Linux: Where Don&amp;#39;t We Want To Go Today? -- Submitted by Pancrazio De Mauro, paraphrasing some well-known sales talk I also like that the communities are so different in their approaches to defining computing</description>
+    </item>
+    
+  </channel>
+</rss>

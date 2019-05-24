@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Youtube on sazl</title>
+    <link>https://sazl.ca/tags/youtube/</link>
+    <description>Recent content in Youtube on sazl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Dec 2018 23:33:42 -0500</lastBuildDate>
+    
+	<atom:link href="https://sazl.ca/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Left Resources</title>
+      <link>https://sazl.ca/posts/left-resources/</link>
+      <pubDate>Sat, 15 Dec 2018 23:33:42 -0500</pubDate>
+      
+      <guid>https://sazl.ca/posts/left-resources/</guid>
+      <description>News: Focused on independent news
+Democracy Now: https://www.democracynow.org/
+Real News Network: https://therealnews.com/
+Canada Independent Media List (Canada): http://www.independentmedia.ca/
+Alternatives Jorunal (Canada): https://www.alternativesjournal.ca/
+Alternatives (Canada): https://www.alternatives.ca/en
+Web: Jacobin: https://jacobinmag.com/
+Current Affairs: https://www.currentaffairs.org/
+Marxism: https://marxist.ca/
+Anti-MRAs and Gender Rights: http://www.wehuntedthemammoth.com/
+Black Socialists of America: https://blacksocialists.us/
+Intro to Critical Theory: http://www.cla.purdue.edu/english/theory/
+Anarchist FAQ: http://www.infoshop.org/AnAnarchistFAQ
+Anarchist Library: http://theanarchistlibrary.org/
+Anarcha-Feminism Resources: http://anarcha.org/
+Critiques of Libertarianism: http://world.std.com/~mhuben/libindex.html
+Web/Politics: On the Issues: http://www.ontheissues.org/default.htm
+538: https://fivethirtyeight.com/
+Publishers Verso Books: https://www.</description>
+    </item>
+    
+  </channel>
+</rss>
