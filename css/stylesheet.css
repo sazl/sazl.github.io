@@ -135,6 +135,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 3rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .posts_listing {
