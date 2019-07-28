@@ -1,13 +1,15 @@
 html {
   overflow-y: scroll;
   height: 100%;
+  font-size: 14px;
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
-    margin: auto;
-    background-color: #f9f9f9;
-    height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  margin: auto;
+  background-color: #f9f9f9;
+  height: 100%;
+  font-size: 14px;
 }
 
 .main {
@@ -28,29 +30,29 @@ body {
   padding-bottom: 45px;
 }
 
+.blog-post-time {
+  margin-bottom: 1em;
+}
+
 .categories-title {
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .categories {
   border: 1px solid #ccc;
-  background-color: yellow;
   padding: 1em;
   width: 100%;
-  margin-left: 1em;
-  margin-right: 2em;
-  box-shadow: 0px 0px 15px 1px #e5e5e5;
-  background-color: #cdf;
+  /* box-shadow: 0px 0px 2px 1px #e5e5e5; */
+  list-style-type: none;
 }
 
-.categories ul {
-  color: #8784ff;
-  padding: 1em;
-  list-style-type: disclosure-closed;
-}
-
-.categories ul a {
-  color: #0500ff;
+.category {
+  display: inline-block;
+  background-color: #eef;
+  padding: 0.25rem;
+  margin-right: 0.2rem;
+  border: 1px solid #ccc;
 }
 
 .content {
@@ -152,23 +154,25 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
+  text-decoration: underline;
 }
 
 h4  {
   font-size: 1.2rem;
+  text-decoration: underline;
 }
 
 h5  {
@@ -218,4 +222,35 @@ q {
   font-size: 0.8em;
   margin-left: 0.5rem;
   color: #009420;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .main {
+    max-width: 100%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .main {
+    max-width: 100%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main {
+    max-width: 100%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
