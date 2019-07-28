@@ -50,7 +50,8 @@ body {
 .category {
   display: inline-block;
   background-color: #eef;
-  padding: 0.25rem;
+  padding: 0.4rem;
+  border-radius: 5px;
   margin-right: 0.2rem;
   border: 1px solid #ccc;
 }
@@ -79,7 +80,7 @@ body {
   text-align: center;
   border: 1px solid #ccc;
   margin-bottom: 3rem;
-  background-color: #fffbf6;
+  background-color: #f6f8ff;
 }
 
 #page-title h1 a {
@@ -91,6 +92,18 @@ body {
   background-color: #eef;
   transition: background-color 0.5s ease;
   cursor: pointer;
+}
+
+a {
+  color: #3453ff;
+}
+
+a:visited {
+  color: purple;
+}
+
+.post_item a:visited, .category a:visited {
+  color: #3453ff;
 }
 
 .post a {
