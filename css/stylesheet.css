@@ -210,6 +210,10 @@ footer  {
   margin-bottom: 1rem;
 }
 
+.nav-item {
+  display: inline-block;
+}
+
 q {
   border: 1px solid grey;
   display: block;
