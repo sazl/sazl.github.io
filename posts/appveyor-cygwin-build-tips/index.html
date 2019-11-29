@@ -95,24 +95,19 @@
     </div>
   </div>
   <div class="blog-post-content">
-    
-
-<p>Some tips for working with Appveyor and Cygwin:</p>
-
+    <p>Some tips for working with Appveyor and Cygwin:</p>
 <h2 id="git-client">Git Client</h2>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">init<span class="p">:</span><span class="w">
 </span><span class="w">    </span>-<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.symlinks<span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">    </span>-<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.autocrlf<span class="w"> </span>input</code></pre></div>
-<p>More Info: <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code">https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code</a></p>
-
+</span><span class="w">    </span>-<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.autocrlf<span class="w"> </span>input<span class="w">
+</span></code></pre></div><p>More Info: <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code"><a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code">https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code</a></a></p>
 <h2 id="environment-variables">Environment Variables</h2>
-
-<p>Set Windows environment variables so that they&rsquo;re accessible from within Cygwin.</p>
+<p>Set Windows environment variables so that they're accessible from within Cygwin.</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">init<span class="p">:</span><span class="w">
-</span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;FOR /F &#34;tokens=* USEBACKQ&#34; %%F IN (`%CYG_PATH% %APPVEYOR_BUILD_FOLDER%`) DO SET BUILD_FOLDER=%%F&#39;</span></code></pre></div>
-<p>This is equivalent to:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">export</span> <span class="nv">BUILD_FOLDER</span><span class="o">=</span><span class="nv">$APPVEYOR_BUILD_FOLDER</span></code></pre></div>
-<h2 id="building-on-cygwin-x86-and-x86-64">Building on Cygwin x86 and x86_64</h2>
+</span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;FOR /F &#34;tokens=* USEBACKQ&#34; %%F IN (`%CYG_PATH% %APPVEYOR_BUILD_FOLDER%`) DO SET BUILD_FOLDER=%%F&#39;</span><span class="w">
+</span></code></pre></div><p>This is equivalent to:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">export</span> <span class="nv">BUILD_FOLDER</span><span class="o">=</span><span class="nv">$APPVEYOR_BUILD_FOLDER</span>
+</code></pre></div><h2 id="building-on-cygwin-x86-and-x8664">Building on Cygwin x86 and x86_64</h2>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">environment<span class="p">:</span><span class="w">
 </span><span class="w">    </span>matrix<span class="p">:</span><span class="w">
 </span><span class="w">        </span>-<span class="w"> </span>CYG_ARCH<span class="p">:</span><span class="w"> </span>x86<span class="w">
@@ -126,21 +121,20 @@
 </span><span class="w">          </span>CYG_CACHE<span class="p">:</span><span class="w"> </span>C<span class="p">:</span>/cygwin64/var/cache/setup<span class="w">
 </span><span class="w">          </span>CYG_SH<span class="p">:</span><span class="w"> </span>C<span class="p">:</span>/cygwin64/bin/bash<span class="w"> </span>-lc<span class="w">
 </span><span class="w">          </span>CYG_INSTALL<span class="p">:</span><span class="w"> </span>C<span class="p">:</span>/cygwin64/setup-x86_64.exe<span class="w"> </span>-q<span class="w"> </span>-P<span class="w">
-</span><span class="w">          </span>CYG_PATH<span class="p">:</span><span class="w"> </span>C<span class="p">:</span>/cygwin64/bin/cygpath<span class="w"> </span>-u</code></pre></div>
-<h2 id="cache">Cache</h2>
-
+</span><span class="w">          </span>CYG_PATH<span class="p">:</span><span class="w"> </span>C<span class="p">:</span>/cygwin64/bin/cygpath<span class="w"> </span>-u<span class="w">
+</span></code></pre></div><h2 id="cache">Cache</h2>
 <p>Cache Cygwin installs between build runs:</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">cache<span class="p">:</span><span class="w">
-</span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;%CYG_CACHE%&#39;</span></code></pre></div>
-<h2 id="installing-cygwin-packages">Installing Cygwin Packages</h2>
-
+</span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;%CYG_CACHE%&#39;</span><span class="w">
+</span></code></pre></div><h2 id="installing-cygwin-packages">Installing Cygwin Packages</h2>
 <p>Use apt-cyg to install Cygwin packages.</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">init<span class="p">:</span><span class="w">
 </span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;%CYG_SH% &#34;cygcheck -dc cygwin&#34;&#39;</span><span class="w">
 </span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;%CYG_INSTALL% &#34;wget&#34;&#39;</span><span class="w">
 </span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;%CYG_SH% &#34;wget rawgit.com/transcode-open/apt-cyg/master/apt-cyg&#34;&#39;</span><span class="w">
 </span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;%CYG_SH% &#34;install apt-cyg /bin&#34;&#39;</span><span class="w">
-</span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;%CYG_SH% &#34;apt-cyg install make autoconf automake gcc-core&#34;&#39;</span></code></pre></div>
+</span><span class="w">    </span>-<span class="w"> </span><span class="s1">&#39;%CYG_SH% &#34;apt-cyg install make autoconf automake gcc-core&#34;&#39;</span><span class="w">
+</span></code></pre></div>
   </div>
 </div>
 

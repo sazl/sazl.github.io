@@ -100,54 +100,50 @@
     </div>
   </div>
   <div class="blog-post-content">
-    
-
-<h1 id="tachyons-is-nice">Tachyons is Nice</h1>
-
+    <h1 id="tachyons-is-nice">Tachyons is Nice</h1>
 <p>Tachyons.io is great for templates and prototypes.
-I wouldn&rsquo;t write a full landing page in it or anything that&rsquo;s not dynamically generated.
-Why? because it&rsquo;s got the same problems as css class composition in HTML, there&rsquo;s no way to group css classes you import.</p>
-
+I wouldn't write a full landing page in it or anything that's not dynamically generated.
+Why? because it's got the same problems as css class composition in HTML, there's no way to group css classes you import.</p>
 <p>An example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;aside fl w-80 ma1 pa2 lh-copy&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;aside-heading lh-title&#34;</span><span class="p">&gt;</span>Technologies<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list pl0 pt3&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
-<p>It gets hard to stack css classes into the html tag. It&rsquo;s hard to read and it&rsquo;s
+<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;aside fl w-80 ma1 pa2 lh-copy&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;aside-heading lh-title&#34;</span><span class="p"></span><span class="p">&gt;</span>Technologies<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list pl0 pt3&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="p">/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div><p>It gets hard to stack css classes into the html tag. It's hard to read and it's
 hard to maintain when duplicating elements and tweaking the layout.</p>
-
 <p>I wish I could do something like this in (S)CSS:</p>
-<div class="highlight"><pre class="chroma"><code class="language-SCSS" data-lang="SCSS"><span class="k">@import</span> <span class="s2">&#34;tachyons.scss&#34;</span>
+<div class="highlight"><pre class="chroma"><code class="language-SCSS" data-lang="SCSS"><span class="k">@import</span> <span class="s2">&#34;</span><span class="s2">tachyons.scss</span><span class="s2">&#34;</span>
 
-<span class="cm">/* AND </span><span class="c">*/</span>
+<span class="cm">/*</span><span class="cm"> AND </span><span class="c">*/</span>
 <span class="o">.</span><span class="n">aside</span> <span class="o">=</span> <span class="p">[</span> <span class="o">.</span><span class="n">fl</span> <span class="o">.</span><span class="n">w-80</span> <span class="o">.</span><span class="n">ma1</span> <span class="o">.</span><span class="n">pa2</span> <span class="o">.</span><span class="n">lh-copy</span> <span class="p">]</span> <span class="n">extend</span> <span class="p">{</span>
-    <span class="nt">border</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="nn">#eef</span><span class="o">;</span>
-    <span class="nt">line-height</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.2rem</span><span class="o">;</span>
-    <span class="nt">font-weight</span><span class="nd">:</span> <span class="nt">600</span><span class="o">;</span>
+    <span class="nt">border</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="nn">#</span><span class="nn">eef</span><span class="p">;</span>
+    <span class="nt">line-height</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.</span><span class="nc">2rem</span><span class="p">;</span>
+    <span class="nt">font-weight</span><span class="nd">:</span> <span class="nt">600</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="nc">.any-title</span> <span class="o">=</span>
+<span class="nc">.</span><span class="nc">any-title</span> <span class="o">=</span>
 
-<span class="nc">.aside__content</span> <span class="o">=</span> <span class="o">[</span><span class="nc">.list</span><span class="o">,</span> <span class="nc">.pl0</span><span class="o">,</span> <span class="nc">.pt3</span><span class="o">],</span> <span class="p">{</span>
-    <span class="nt">margin</span><span class="nd">:</span> <span class="nt">1rem</span><span class="o">;</span>
-<span class="p">}</span></code></pre></div>
-<p>Equivalent HTML:</p>
-<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;aside&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;aside__heading&#34;</span><span class="p">&gt;</span>Technologies<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;aside__content&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
-<p>Some things in the example:</p>
+<span class="nc">.</span><span class="nc">aside__content</span> <span class="o">=</span> <span class="o">[</span><span class="nc">.</span><span class="nc">list</span><span class="o">,</span> <span class="nc">.</span><span class="nc">pl0</span><span class="o">,</span> <span class="nc">.</span><span class="nc">pt3</span><span class="o">]</span><span class="o">,</span> <span class="p">{</span>
+    <span class="nt">margin</span><span class="nd">:</span> <span class="nt">1rem</span><span class="p">;</span>
+<span class="p">}</span>
 
+</code></pre></div><p>Equivalent HTML:</p>
+<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;aside&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;aside__heading&#34;</span><span class="p"></span><span class="p">&gt;</span>Technologies<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;aside__content&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="p">/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+</code></pre></div><p>Some things in the example:</p>
 <ul>
 <li>Import tachyons</li>
 <li>CSS aliases: allowing you to group CSS class names or selectors as one name.</li>
 <li>Anonymous selector groups: Like an anonymous block that can be used as if a named selector has been defined for it.</li>
 </ul>
-
 <p>Using it in HTML:</p>
-<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML">
+</code></pre></div>
   </div>
 </div>
 

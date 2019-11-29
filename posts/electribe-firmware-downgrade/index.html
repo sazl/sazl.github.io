@@ -21,7 +21,7 @@
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,600,700,900|Ubuntu+Mono" rel="stylesheet">
 
         
-          <title>sazl Tools for Software Architecture</title>
+          <title>sazl Electribe Firmware Downgrade</title>
         
 
         <link rel="stylesheet" href="/css/stylesheet.css">
@@ -60,53 +60,61 @@
 
 
 <div class="blog-post">
-  <h1>Tools for Software Architecture</h1>
+  <h1>Electribe Firmware Downgrade</h1>
   <div class="blog-post-subheader">
     <div class="fl w-100 blog-post-time">
-      <time>14 Sep 2018</time>
+      <time>28 Nov 2019</time>
     </div>
     <div class="fl w-100">
       
       
-        <ul class="categories flex">
-          
-            
-            
-              <li class="category fl w-5"><a href="https://sazl.ca/tags/cs/">CS</a></li>
-            
-          
-            
-            
-              <li class="category fl w-5"><a href="https://sazl.ca/tags/software/">software</a></li>
-            
-          
-            
-            
-              <li class="category fl w-5"><a href="https://sazl.ca/tags/tla&#43;/">TLA&#43;</a></li>
-            
-          
-            
-            
-              <li class="category fl w-5"><a href="https://sazl.ca/tags/systems-design/">systems design</a></li>
-            
-          
-            
-            
-              <li class="category fl w-5"><a href="https://sazl.ca/tags/tools/">tools</a></li>
-            
-          
-        </ul>
-      
     </div>
   </div>
   <div class="blog-post-content">
-    <p>Some thoughts on architecture and understanding big systems.
-If you can't fit it all in your head, you don't get it.
-We need tools to capture specifications and running systems more succinctly.</p>
-<p>I'd like diagnostic and instrumentation tools that capture data like a modern
-factory's control systems. I'd love to be able to drill down from a high level
-overview of the system to the operations of a single component, such as looking at
-a particular Kafka's consumer group size.</p>
+    <h2 id="preconditions">Pre-conditions</h2>
+<ol>
+<li>Ensure your electribe synth is on version 2.02</li>
+</ol>
+<h2 id="preparation">Preparation</h2>
+<ol start="2">
+<li>Download firmware v1.06 for the sampler electribe</li>
+<li>Download firmware v.1.10 for the synth electribe</li>
+</ol>
+<blockquote>
+<p>These 2 firmwares lack protection checking when swapping between electribes.
+v1.17+ of the synth version and v1.14+ of the sampler will have protection checking,
+preventing you from swapping firmwares</p>
+</blockquote>
+<h2 id="downgrading-the-synth-version">Downgrading the Synth Version</h2>
+<ol start="4">
+<li>Edit the v1.10 header of the synth firmware to look like v2.02</li>
+</ol>
+<blockquote>
+<p>Look for differences in the header ranging from 0x00 to 0x30
+The version information is stored in bytes: major (0x2A) minor (0x2B)</p>
+</blockquote>
+<ol start="5">
+<li>Load the firmware onto an SD card and update your electribe</li>
+<li>Your electribe will now be v1.10 (v2.02 displayed)</li>
+</ol>
+<h2 id="swapping-to-the-sampler-version">Swapping to the Sampler Version</h2>
+<ol start="7">
+<li>Edit the sampler firmware v1.06 to look like a synth firmware v1.11</li>
+<li>Load it on an SD card and update your electribe</li>
+<li>Your electribe will now be a sampler v1.06</li>
+</ol>
+<h2 id="upgrading-sampler-version">Upgrading Sampler Version</h2>
+<ol start="10">
+<li>Load an unedited sampler firmware on an SD card and update as usual</li>
+<li>I've been unable to successfully update from v1.06 to any other version, I assume newer version have protections.</li>
+</ol>
+<h2 id="going-back-to-the-synth-version">Going Back to the Synth Version</h2>
+<ol start="12">
+<li>Edit synth firmware v1.10 to look like a sampler firmware v1.06</li>
+<li>Load it on an SD card and update your electribe</li>
+<li>The electribe will be a synth v1.10</li>
+<li>Upgrade the electribe normally using unedited synth firmware versions</li>
+</ol>
 
   </div>
 </div>
