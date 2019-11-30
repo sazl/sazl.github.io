@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sazl.ca/posts/novation-x-station-sysex/</loc>
+    <lastmod>2019-11-30T10:12:47-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sazl.ca/</loc>
+    <lastmod>2019-11-30T10:12:47-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sazl.ca/posts/electribe-firmware-downgrade/</loc>
     <lastmod>2019-11-28T11:14:47-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://sazl.ca/posts/</loc>
-    <lastmod>2019-11-28T11:14:47-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sazl.ca/</loc>
     <lastmod>2019-11-28T11:14:47-05:00</lastmod>
   </url>
   
