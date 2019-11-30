@@ -22,7 +22,8 @@ SYSEX System Exclusive MIDI files are used by manufacturers for proprietary prog
 The basic message format:
 F0 &amp;lt;metadata&amp;gt; &amp;lt;data&amp;gt; F7  Byte F0: Start marker Byte F7: End marker Metadata: Manufacturer code, data size (variable size) Data: Data to be sent (variable size)  References https://www.csie.ntu.edu.tw/~r92092/ref/midi/
 https://github.com/asb2m10/dexed/blob/master/Documentation/sysex-format.txt
-https://electronicmusic.fandom.com/wiki/System_exclusive</description>
+https://electronicmusic.fandom.com/wiki/System_exclusive
+https://github.com/francoisgeorgy/BS2-SysEx</description>
     </item>
     
     <item>

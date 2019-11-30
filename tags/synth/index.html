@@ -21,7 +21,7 @@
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,600,700,900|Ubuntu+Mono" rel="stylesheet">
 
         
-          <title>sazl Novation X-Station SYSEX</title>
+          <title>sazl</title>
         
 
         <link rel="stylesheet" href="/css/stylesheet.css">
@@ -59,51 +59,37 @@
             </section>
 
 
-<div class="blog-post">
-  <h1>Novation X-Station SYSEX</h1>
-  <div class="blog-post-subheader">
-    <div class="fl w-100 blog-post-time">
-      <time>30 Nov 2019</time>
-    </div>
-    <div class="fl w-100">
-      
-      
-        <ul class="categories flex">
-          
-            
-            
-              <li class="category fl w-5"><a href="https://sazl.ca/tags/synth/">synth</a></li>
-            
-          
-            
-            
-              <li class="category fl w-5"><a href="https://sazl.ca/tags/midi/">midi</a></li>
-            
-          
-        </ul>
-      
-    </div>
-  </div>
-  <div class="blog-post-content">
-    <p>Figuring out X-Station's SYSEX format.</p>
-<h1 id="sysex">SYSEX</h1>
-<p>System Exclusive MIDI files are used by manufacturers for proprietary programming of their controllers.</p>
-<p>The basic message format:</p>
-<pre><code>F0 &lt;metadata&gt; &lt;data&gt; F7
-</code></pre><ul>
-<li>Byte F0: Start marker</li>
-<li>Byte F7: End marker</li>
-<li>Metadata: Manufacturer code, data size (variable size)</li>
-<li>Data: Data to be sent (variable size)</li>
-</ul>
-<h1 id="references">References</h1>
-<p><a href="https://www.csie.ntu.edu.tw/~r92092/ref/midi/">https://www.csie.ntu.edu.tw/~r92092/ref/midi/</a></p>
-<p><a href="https://github.com/asb2m10/dexed/blob/master/Documentation/sysex-format.txt">https://github.com/asb2m10/dexed/blob/master/Documentation/sysex-format.txt</a></p>
-<p><a href="https://electronicmusic.fandom.com/wiki/System_exclusive">https://electronicmusic.fandom.com/wiki/System_exclusive</a></p>
-<p><a href="https://github.com/francoisgeorgy/BS2-SysEx">https://github.com/francoisgeorgy/BS2-SysEx</a></p>
-
-  </div>
-</div>
+<section>
+  <ul class="posts_listing">
+    
+    <li class="post_item">
+      <a href="https://sazl.ca/posts/novation-x-station-sysex/">
+        <div class="row col-sm-12 post_content">
+          <div class="d-none d-sm-block col-sm-3 date-time-title">
+            <time>30 Nov 2019</time>
+          </div>
+          <div class="col-sm-9 date-time-title post">
+            Novation X-Station SYSEX
+          </div>
+        </div>
+      </a>
+    </li>
+    
+    <li class="post_item">
+      <a href="https://sazl.ca/posts/electribe-firmware-downgrade/">
+        <div class="row col-sm-12 post_content">
+          <div class="d-none d-sm-block col-sm-3 date-time-title">
+            <time>28 Nov 2019</time>
+          </div>
+          <div class="col-sm-9 date-time-title post">
+            Electribe Firmware Downgrade
+          </div>
+        </div>
+      </a>
+    </li>
+    
+  </ul>
+</section>
 
           <footer>
             <hr>

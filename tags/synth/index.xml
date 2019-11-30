@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>synth on sazl</title>
+    <link>https://sazl.ca/tags/synth/</link>
+    <description>Recent content in synth on sazl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Nov 2019 10:12:47 -0500</lastBuildDate>
+    
+	<atom:link href="https://sazl.ca/tags/synth/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Novation X-Station SYSEX</title>
+      <link>https://sazl.ca/posts/novation-x-station-sysex/</link>
+      <pubDate>Sat, 30 Nov 2019 10:12:47 -0500</pubDate>
+      
+      <guid>https://sazl.ca/posts/novation-x-station-sysex/</guid>
+      <description>Figuring out X-Station&#39;s SYSEX format.
+SYSEX System Exclusive MIDI files are used by manufacturers for proprietary programming of their controllers.
+The basic message format:
+F0 &amp;lt;metadata&amp;gt; &amp;lt;data&amp;gt; F7  Byte F0: Start marker Byte F7: End marker Metadata: Manufacturer code, data size (variable size) Data: Data to be sent (variable size)  References https://www.csie.ntu.edu.tw/~r92092/ref/midi/
+https://github.com/asb2m10/dexed/blob/master/Documentation/sysex-format.txt
+https://electronicmusic.fandom.com/wiki/System_exclusive
+https://github.com/francoisgeorgy/BS2-SysEx</description>
+    </item>
+    
+    <item>
+      <title>Electribe Firmware Downgrade</title>
+      <link>https://sazl.ca/posts/electribe-firmware-downgrade/</link>
+      <pubDate>Thu, 28 Nov 2019 11:14:47 -0500</pubDate>
+      
+      <guid>https://sazl.ca/posts/electribe-firmware-downgrade/</guid>
+      <description>Pre-conditions  Ensure your electribe synth is on version 2.02  Preparation Download firmware v1.06 for the sampler electribe Download firmware v.1.10 for the synth electribe   These 2 firmwares lack protection checking when swapping between electribes. v1.17+ of the synth version and v1.14+ of the sampler will have protection checking, preventing you from swapping firmwares
+ Downgrading the Synth Version Edit the v1.10 header of the synth firmware to look like v2.</description>
+    </item>
+    
+  </channel>
+</rss>
