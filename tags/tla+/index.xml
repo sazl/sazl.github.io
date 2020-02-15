@@ -13,10 +13,10 @@
     
     <item>
       <title>Tools for Software Architecture</title>
-      <link>https://sazl.ca/posts/tools-for-software-architecture/</link>
+      <link>https://sazl.ca/tools-for-software-architecture/</link>
       <pubDate>Fri, 14 Sep 2018 18:12:43 -0400</pubDate>
       
-      <guid>https://sazl.ca/posts/tools-for-software-architecture/</guid>
+      <guid>https://sazl.ca/tools-for-software-architecture/</guid>
       <description>Some thoughts on architecture and understanding big systems. If you can&#39;t fit it all in your head, you don&#39;t get it. We need tools to capture specifications and running systems more succinctly.
 I&#39;d like diagnostic and instrumentation tools that capture data like a modern factory&#39;s control systems. I&#39;d love to be able to drill down from a high level overview of the system to the operations of a single component, such as looking at a particular Kafka&#39;s consumer group size.</description>
     </item>

@@ -13,17 +13,15 @@
     
     <item>
       <title>Appveyor Cygwin Build Tips</title>
-      <link>https://sazl.ca/posts/appveyor-cygwin-build-tips/</link>
+      <link>https://sazl.ca/appveyor-cygwin-build-tips/</link>
       <pubDate>Sat, 20 Oct 2018 07:41:22 -0400</pubDate>
       
-      <guid>https://sazl.ca/posts/appveyor-cygwin-build-tips/</guid>
+      <guid>https://sazl.ca/appveyor-cygwin-build-tips/</guid>
       <description>Some tips for working with Appveyor and Cygwin:
-Git Client init:-gitconfig--globalcore.symlinkstrue-gitconfig--globalcore.autocrlfinputMore Info: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code
+Git Client init: - git config --global core.symlinks true - git config --global core.autocrlf input  More Info: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code
 Environment Variables Set Windows environment variables so that they&#39;re accessible from within Cygwin.
-init:-&amp;#39;FOR /F &amp;#34;tokens=* USEBACKQ&amp;#34; %%F IN (`%CYG_PATH% %APPVEYOR_BUILD_FOLDER%`) DO SET BUILD_FOLDER=%%F&amp;#39;This is equivalent to:
-export BUILD_FOLDER=$APPVEYOR_BUILD_FOLDER Building on Cygwin x86 and x86_64 environment:matrix:-CYG_ARCH:x86CYG_ROOT:C:/cygwinCYG_CACHE:C:/cygwin/var/cache/setupCYG_SH:C:/cygwin/bin/bash-lcCYG_INSTALL:C:/cygwin/setup-x86.exe-q-PCYG_PATH:C:/cygwin/bin/cygpath-u-CYG_ARCH:x86_64CYG_ROOT:C:/cygwin64CYG_CACHE:C:/cygwin64/var/cache/setupCYG_SH:C:/cygwin64/bin/bash-lcCYG_INSTALL:C:/cygwin64/setup-x86_64.exe-q-PCYG_PATH:C:/cygwin64/bin/cygpath-uCache Cache Cygwin installs between build runs:
-cache:-&amp;#39;%CYG_CACHE%&amp;#39;Installing Cygwin Packages Use apt-cyg to install Cygwin packages.
-init:-&amp;#39;%CYG_SH% &amp;#34;cygcheck -dc cygwin&amp;#34;&amp;#39;-&amp;#39;%CYG_INSTALL% &amp;#34;wget&amp;#34;&amp;#39;-&amp;#39;%CYG_SH% &amp;#34;wget rawgit.</description>
+init: - &#39;FOR /F &amp;quot;tokens=* USEBACKQ&amp;quot; %%F IN (`%CYG_PATH% %APPVEYOR_BUILD_FOLDER%`) DO SET BUILD_FOLDER=%%F&#39;  This is equivalent to:
+export BUILD_FOLDER=$APPVEYOR_BUILD_FOLDER  Building on Cygwin x86 and x86_64 environment: matrix: - CYG_ARCH: x86 CYG_ROOT: C:/cygwin CYG_CACHE: C:/cygwin/var/cache/setup CYG_SH: C:/cygwin/bin/bash -lc CYG_INSTALL: C:/cygwin/setup-x86.</description>
     </item>
     
   </channel>

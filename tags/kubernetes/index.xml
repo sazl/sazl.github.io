@@ -13,10 +13,10 @@
     
     <item>
       <title>Installing Kubernetes Using kubeadm</title>
-      <link>https://sazl.ca/posts/problems-in-the-kubaeadm-guide/</link>
+      <link>https://sazl.ca/problems-in-the-kubaeadm-guide/</link>
       <pubDate>Mon, 20 Mar 2017 10:12:00 -0400</pubDate>
       
-      <guid>https://sazl.ca/posts/problems-in-the-kubaeadm-guide/</guid>
+      <guid>https://sazl.ca/problems-in-the-kubaeadm-guide/</guid>
       <description>The deployment of Kubernetes has become a little easier using the kubeadm tool. The tools are still in alpha and the guide is still not as thorough as I would have hoped.
 Installing Flannel as a Pod Network Once you&#39;ve completed the first two steps, you should have a working master node. To add additional child nodes you must install a pod network. I chose to install Flannel but there are other options available.</description>
     </item>

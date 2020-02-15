@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sazl.ca/post/</loc>
+    <lastmod>2019-11-30T15:08:38-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sazl.ca/tags/eckhart/</loc>
     <lastmod>2019-11-30T15:08:38-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/meister-eckhart-quotes/</loc>
+    <loc>https://sazl.ca/meister-eckhart-quotes/</loc>
     <lastmod>2019-11-30T15:08:38-05:00</lastmod>
   </url>
   
@@ -38,7 +43,7 @@
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/novation-x-station-sysex/</loc>
+    <loc>https://sazl.ca/novation-x-station-sysex/</loc>
     <lastmod>2019-11-30T10:12:47-05:00</lastmod>
   </url>
   
@@ -48,32 +53,27 @@
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/electribe-firmware-downgrade/</loc>
+    <loc>https://sazl.ca/electribe-firmware-downgrade/</loc>
     <lastmod>2019-11-28T11:14:47-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/</loc>
-    <lastmod>2019-11-28T11:14:47-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sazl.ca/posts/game-review/</loc>
+    <loc>https://sazl.ca/game-review/</loc>
     <lastmod>2019-03-09T09:27:47-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/learning-ats/</loc>
+    <loc>https://sazl.ca/learning-ats/</loc>
     <lastmod>2019-02-17T16:58:46-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/wikipedia-api-notes/</loc>
+    <loc>https://sazl.ca/wikipedia-api-notes/</loc>
     <lastmod>2018-12-22T18:29:54-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/digital-humanities-resources/</loc>
+    <loc>https://sazl.ca/digital-humanities-resources/</loc>
     <lastmod>2018-12-17T18:44:17-05:00</lastmod>
   </url>
   
@@ -93,12 +93,12 @@
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/year-of-the-five-emperors/</loc>
+    <loc>https://sazl.ca/year-of-the-five-emperors/</loc>
     <lastmod>2018-12-16T00:17:45-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/left-resources/</loc>
+    <loc>https://sazl.ca/left-resources/</loc>
     <lastmod>2018-12-15T23:33:42-05:00</lastmod>
   </url>
   
@@ -123,12 +123,12 @@
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/change-of-perspective/</loc>
+    <loc>https://sazl.ca/change-of-perspective/</loc>
     <lastmod>2018-12-01T20:03:25-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/apple-jxa-notes/</loc>
+    <loc>https://sazl.ca/apple-jxa-notes/</loc>
     <lastmod>2018-11-27T20:07:08-05:00</lastmod>
   </url>
   
@@ -138,7 +138,7 @@
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/appveyor-cygwin-build-tips/</loc>
+    <loc>https://sazl.ca/appveyor-cygwin-build-tips/</loc>
     <lastmod>2018-10-20T07:41:22-04:00</lastmod>
   </url>
   
@@ -168,7 +168,7 @@
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/the-state-of-python-profiling/</loc>
+    <loc>https://sazl.ca/the-state-of-python-profiling/</loc>
     <lastmod>2018-10-12T17:59:57-04:00</lastmod>
   </url>
   
@@ -179,7 +179,7 @@
   
   <url>
     <loc>https://sazl.ca/about/</loc>
-    <lastmod>2018-10-12T17:55:50-04:00</lastmod>
+    <lastmod>2019-05-24T00:12:47-04:00</lastmod>
   </url>
   
   <url>
@@ -188,7 +188,7 @@
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/computer-mythology/</loc>
+    <loc>https://sazl.ca/computer-mythology/</loc>
     <lastmod>2018-09-27T19:35:53-04:00</lastmod>
   </url>
   
@@ -213,7 +213,7 @@
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/tools-for-software-architecture/</loc>
+    <loc>https://sazl.ca/tools-for-software-architecture/</loc>
     <lastmod>2018-09-14T18:12:43-04:00</lastmod>
   </url>
   
@@ -238,17 +238,17 @@
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/tachyons-is-nice-for-templates/</loc>
+    <loc>https://sazl.ca/tachyons-is-nice-for-templates/</loc>
     <lastmod>2018-09-13T20:47:12-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/picking-a-technology/</loc>
+    <loc>https://sazl.ca/picking-a-technology/</loc>
     <lastmod>2018-07-31T00:26:48-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/go-link-to-package-url/</loc>
+    <loc>https://sazl.ca/go-link-to-package-url/</loc>
     <lastmod>2018-07-22T13:51:09-04:00</lastmod>
   </url>
   
@@ -263,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/apl-my-old-friend/</loc>
+    <loc>https://sazl.ca/apl-my-old-friend/</loc>
     <lastmod>2018-07-11T19:37:18-04:00</lastmod>
   </url>
   
@@ -283,7 +283,7 @@
   </url>
   
   <url>
-    <loc>https://sazl.ca/posts/problems-in-the-kubaeadm-guide/</loc>
+    <loc>https://sazl.ca/problems-in-the-kubaeadm-guide/</loc>
     <lastmod>2017-03-20T10:12:00-04:00</lastmod>
   </url>
   

@@ -13,10 +13,10 @@
     
     <item>
       <title>Go Link to Package Url</title>
-      <link>https://sazl.ca/posts/go-link-to-package-url/</link>
+      <link>https://sazl.ca/go-link-to-package-url/</link>
       <pubDate>Sun, 22 Jul 2018 13:51:09 -0400</pubDate>
       
-      <guid>https://sazl.ca/posts/go-link-to-package-url/</guid>
+      <guid>https://sazl.ca/go-link-to-package-url/</guid>
       <description>When creating a go pkg, please make your package URI point to actual documentation (if possible): k8s.io/kubernetes/pkg/kubectl/genericclioptions</description>
     </item>
     
