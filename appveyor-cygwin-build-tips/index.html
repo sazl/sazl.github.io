@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <meta name="generator" content="Hugo 0.60.0" />
+  <meta name="generator" content="Hugo 0.75.1" />
   <link rel="canonical" href="https://sazl.ca/appveyor-cygwin-build-tips/">
 
   
@@ -315,7 +315,7 @@
           
           
           
-          <a href="#building-on-cygwin-x86-and-x8664">
+          <a href="#building-on-cygwin-x86-and-x86_64">
             Building on Cygwin x86 and x86_64
           </a>
         </li>
@@ -352,16 +352,16 @@
     - git config --global core.symlinks true
     - git config --global core.autocrlf input
 </code></pre>
-<p>More Info: <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code"><a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code">https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code</a></a></p>
+<p>More Info: <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code">https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code</a></p>
 <h2 id="environment-variables">Environment Variables</h2>
-<p>Set Windows environment variables so that they're accessible from within Cygwin.</p>
+<p>Set Windows environment variables so that they&rsquo;re accessible from within Cygwin.</p>
 <pre><code class="language-yaml">init:
     - 'FOR /F &quot;tokens=* USEBACKQ&quot; %%F IN (`%CYG_PATH% %APPVEYOR_BUILD_FOLDER%`) DO SET BUILD_FOLDER=%%F'
 </code></pre>
 <p>This is equivalent to:</p>
 <pre><code class="language-bash">export BUILD_FOLDER=$APPVEYOR_BUILD_FOLDER
 </code></pre>
-<h2 id="building-on-cygwin-x86-and-x8664">Building on Cygwin x86 and x86_64</h2>
+<h2 id="building-on-cygwin-x86-and-x86_64">Building on Cygwin x86 and x86_64</h2>
 <pre><code class="language-yaml">environment:
     matrix:
         - CYG_ARCH: x86
@@ -406,7 +406,7 @@
     </label>
   </div>
   
-    Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/zwbetz-gh/cupper-hugo-theme">Cupper</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>.
+    sazl
   
 </footer>
 

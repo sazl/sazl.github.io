@@ -6,11 +6,7 @@
     <description>Recent content in CS on sazl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Oct 2018 07:41:22 -0400</lastBuildDate>
-    
-	<atom:link href="https://sazl.ca/tags/cs/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 20 Oct 2018 07:41:22 -0400</lastBuildDate><atom:link href="https://sazl.ca/tags/cs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Appveyor Cygwin Build Tips</title>
       <link>https://sazl.ca/appveyor-cygwin-build-tips/</link>
@@ -19,7 +15,7 @@
       <guid>https://sazl.ca/appveyor-cygwin-build-tips/</guid>
       <description>Some tips for working with Appveyor and Cygwin:
 Git Client init: - git config --global core.symlinks true - git config --global core.autocrlf input  More Info: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_code_core_autocrlf_code
-Environment Variables Set Windows environment variables so that they&#39;re accessible from within Cygwin.
+Environment Variables Set Windows environment variables so that they&amp;rsquo;re accessible from within Cygwin.
 init: - &#39;FOR /F &amp;quot;tokens=* USEBACKQ&amp;quot; %%F IN (`%CYG_PATH% %APPVEYOR_BUILD_FOLDER%`) DO SET BUILD_FOLDER=%%F&#39;  This is equivalent to:
 export BUILD_FOLDER=$APPVEYOR_BUILD_FOLDER  Building on Cygwin x86 and x86_64 environment: matrix: - CYG_ARCH: x86 CYG_ROOT: C:/cygwin CYG_CACHE: C:/cygwin/var/cache/setup CYG_SH: C:/cygwin/bin/bash -lc CYG_INSTALL: C:/cygwin/setup-x86.</description>
     </item>
@@ -31,7 +27,7 @@ export BUILD_FOLDER=$APPVEYOR_BUILD_FOLDER  Building on Cygwin x86 and x86_64 en
       
       <guid>https://sazl.ca/the-state-of-python-profiling/</guid>
       <description>There are no good python profiling tools. Here is what I consider necessary from a profiler:
- Cross platform Profiling of live applications Ability to generate profiler dumps (preferably gprof compatible) Call tree profiling Line-level profiling  The built-in python profilers cProfile and profile don&#39;t meet 1, 2, and 5. 3rd party alternatives also fall short.
+ Cross platform Profiling of live applications Ability to generate profiler dumps (preferably gprof compatible) Call tree profiling Line-level profiling  The built-in python profilers cProfile and profile don&amp;rsquo;t meet 1, 2, and 5. 3rd party alternatives also fall short.
 Pyflame A great live profiler:
  low overhead. live profiling of processes. generates profiler dumps, convertible to gprof and svg.</description>
     </item>
@@ -52,8 +48,8 @@ Linux: Where Don&#39;t We Want To Go Today? -- Submitted by Pancrazio De Mauro, 
       <pubDate>Fri, 14 Sep 2018 18:12:43 -0400</pubDate>
       
       <guid>https://sazl.ca/tools-for-software-architecture/</guid>
-      <description>Some thoughts on architecture and understanding big systems. If you can&#39;t fit it all in your head, you don&#39;t get it. We need tools to capture specifications and running systems more succinctly.
-I&#39;d like diagnostic and instrumentation tools that capture data like a modern factory&#39;s control systems. I&#39;d love to be able to drill down from a high level overview of the system to the operations of a single component, such as looking at a particular Kafka&#39;s consumer group size.</description>
+      <description>Some thoughts on architecture and understanding big systems. If you can&amp;rsquo;t fit it all in your head, you don&amp;rsquo;t get it. We need tools to capture specifications and running systems more succinctly.
+I&amp;rsquo;d like diagnostic and instrumentation tools that capture data like a modern factory&amp;rsquo;s control systems. I&amp;rsquo;d love to be able to drill down from a high level overview of the system to the operations of a single component, such as looking at a particular Kafka&amp;rsquo;s consumer group size.</description>
     </item>
     
     <item>
@@ -62,7 +58,7 @@ I&#39;d like diagnostic and instrumentation tools that capture data like a moder
       <pubDate>Thu, 13 Sep 2018 20:47:12 -0400</pubDate>
       
       <guid>https://sazl.ca/tachyons-is-nice-for-templates/</guid>
-      <description>Tachyons is Nice Tachyons.io is great for templates and prototypes. I wouldn&#39;t write a full landing page in it or anything that&#39;s not dynamically generated. Why? because it&#39;s got the same problems as css class composition in HTML, there&#39;s no way to group css classes you import.
+      <description>Tachyons is Nice Tachyons.io is great for templates and prototypes. I wouldn&amp;rsquo;t write a full landing page in it or anything that&amp;rsquo;s not dynamically generated. Why? because it&amp;rsquo;s got the same problems as css class composition in HTML, there&amp;rsquo;s no way to group css classes you import.
 An example:
 &amp;lt;div class=&amp;quot;aside fl w-80 ma1 pa2 lh-copy&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;aside-heading lh-title&amp;quot;&amp;gt;Technologies&amp;lt;/div&amp;gt; &amp;lt;ul class=&amp;quot;list pl0 pt3&amp;quot;&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/div&amp;gt;  It gets hard to stack css classes into the html tag.</description>
     </item>
@@ -92,7 +88,7 @@ An example:
       <pubDate>Wed, 11 Jul 2018 19:37:18 -0400</pubDate>
       
       <guid>https://sazl.ca/apl-my-old-friend/</guid>
-      <description>I&#39;ve been getting back into J after reading this twitter thread:
+      <description>I&amp;rsquo;ve been getting back into J after reading this twitter thread:
 https://twitter.com/digitalbeard/status/987775955220430848
 I first learned of J around 10 years ago. I remember reading &amp;ldquo;Easy J&amp;rdquo; and being amazed. Here was something so alien from everything I thought I knew about programming languages. The verbs, adverbs, and conjunctions were so cohesive, everything seemed to flow effortlessly. Writing J programs was somewhat akin to poetry, something explained better by Alan J. Perlis.</description>
     </item>
@@ -104,7 +100,7 @@ I first learned of J around 10 years ago. I remember reading &amp;ldquo;Easy J&a
       
       <guid>https://sazl.ca/problems-in-the-kubaeadm-guide/</guid>
       <description>The deployment of Kubernetes has become a little easier using the kubeadm tool. The tools are still in alpha and the guide is still not as thorough as I would have hoped.
-Installing Flannel as a Pod Network Once you&#39;ve completed the first two steps, you should have a working master node. To add additional child nodes you must install a pod network. I chose to install Flannel but there are other options available.</description>
+Installing Flannel as a Pod Network Once you&amp;rsquo;ve completed the first two steps, you should have a working master node. To add additional child nodes you must install a pod network. I chose to install Flannel but there are other options available.</description>
     </item>
     
   </channel>

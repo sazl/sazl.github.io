@@ -6,18 +6,14 @@
     <description>Recent content in midi on sazl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Nov 2019 10:12:47 -0500</lastBuildDate>
-    
-	<atom:link href="https://sazl.ca/tags/midi/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 30 Nov 2019 10:12:47 -0500</lastBuildDate><atom:link href="https://sazl.ca/tags/midi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Novation X-Station SYSEX</title>
       <link>https://sazl.ca/novation-x-station-sysex/</link>
       <pubDate>Sat, 30 Nov 2019 10:12:47 -0500</pubDate>
       
       <guid>https://sazl.ca/novation-x-station-sysex/</guid>
-      <description>Figuring out X-Station&#39;s SYSEX format.
+      <description>Figuring out X-Station&amp;rsquo;s SYSEX format.
 SYSEX System Exclusive MIDI files are used by manufacturers for proprietary programming of their controllers.
 The basic message format:
 F0 &amp;lt;metadata&amp;gt; &amp;lt;data&amp;gt; F7   Byte F0: Start marker Byte F7: End marker Metadata: Manufacturer code, data size (variable size) Data: Data to be sent (variable size)  References https://www.csie.ntu.edu.tw/~r92092/ref/midi/

@@ -6,18 +6,14 @@
     <description>Recent content in apl on sazl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Jul 2018 19:37:18 -0400</lastBuildDate>
-    
-	<atom:link href="https://sazl.ca/tags/apl/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 11 Jul 2018 19:37:18 -0400</lastBuildDate><atom:link href="https://sazl.ca/tags/apl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>APL My Old Friend</title>
       <link>https://sazl.ca/apl-my-old-friend/</link>
       <pubDate>Wed, 11 Jul 2018 19:37:18 -0400</pubDate>
       
       <guid>https://sazl.ca/apl-my-old-friend/</guid>
-      <description>I&#39;ve been getting back into J after reading this twitter thread:
+      <description>I&amp;rsquo;ve been getting back into J after reading this twitter thread:
 https://twitter.com/digitalbeard/status/987775955220430848
 I first learned of J around 10 years ago. I remember reading &amp;ldquo;Easy J&amp;rdquo; and being amazed. Here was something so alien from everything I thought I knew about programming languages. The verbs, adverbs, and conjunctions were so cohesive, everything seemed to flow effortlessly. Writing J programs was somewhat akin to poetry, something explained better by Alan J. Perlis.</description>
     </item>

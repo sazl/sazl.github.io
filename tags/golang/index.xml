@@ -6,11 +6,7 @@
     <description>Recent content in golang on sazl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Jul 2018 13:51:09 -0400</lastBuildDate>
-    
-	<atom:link href="https://sazl.ca/tags/golang/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 22 Jul 2018 13:51:09 -0400</lastBuildDate><atom:link href="https://sazl.ca/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go Link to Package Url</title>
       <link>https://sazl.ca/go-link-to-package-url/</link>
